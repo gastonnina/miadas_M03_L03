@@ -1,0 +1,313 @@
+# Preparación de datos
+
+Dado que las fechas en los CSV están en formato DD/MM/YYYY debemos de convertir a YYYY-MM-DD para su correcta manipulación con R studio. \## Cargamos librerías a usa
+
+```{r librerias}
+rm(list = ls())      # Para limpiar memoria
+
+# Librerías necesarias (Packages)
+packages <- c("tidyverse", "dplyr", "sqldf", "lubridate", "sf", "leaflet", "highcharter", "echarts4r", "plotly")
+# Verificamos si tenemos los paquetes si no los instalamos
+for (package in packages) {
+  if (!requireNamespace(package, quietly = TRUE)) {
+    install.packages(package)
+  }
+}
+# Cargar paquetes instalados
+library(tidyverse)
+library(dplyr)
+library(sqldf) # para consultas sql a los dataframes
+library(lubridate)
+library(sf)
+library(leaflet)
+library(highcharter)
+library(echarts4r)
+library(plotly)
+
+if (!require("bs4Dash")) install.packages("bs4Dash")
+if (!require("shiny")) install.packages("shiny")
+if (!require("dplyr")) install.packages("dplyr")
+if (!require("highcharter")) install.packages("highcharter")
+```
+
+#Parte 1: Preparación de los datos
+
+## Cargamos los CSVs
+
+```{r carga de csv}
+df_campanias = read.csv("_data/marketing_campañas.csv", sep = ",")
+df_clientes = read.csv("_data/marketing_clientes.csv", sep = ",")
+df_servicios = read.csv("_data/marketing_servicios.csv", sep = ",")
+df_transacciones = read.csv("_data/marketing_transacciones.csv", sep = ",")
+# ponemos los nombres de columnas en minusculas 
+names(df_clientes) <- tolower(names(df_clientes))
+names(df_servicios) <- tolower(names(df_servicios))
+names(df_campanias) <- tolower(names(df_campanias))
+names(df_transacciones) <- tolower(names(df_transacciones))
+```
+
+## Revisamos datos 
+```{r}
+# Revisar tipos
+str(df_transacciones)
+
+# Convertir fechas
+df_transacciones$fecha <- as.Date(df_transacciones$fecha)
+```
+## Unir datos completos
+```{r unir datos}
+# Unir todo
+df_datos_completos <- df_transacciones %>%
+  left_join(df_clientes, by = "id_cliente") %>%
+  left_join(df_servicios, by = "id_servicio") %>%
+  left_join(df_campanias, by = "id_campaña")
+# 💾 GUARDAR DATOS UNIDOS EN UN ARCHIVO .RData
+save(df_datos_completos, file = "_data/datos_completos.RData")
+
+head(df_datos_completos)
+```
+```{r Cargar Datos}
+
+load("_data/datos_completos.RData")
+
+```
+
+
+# Parte 2: Visualizaciones Interactivas
+
+
+## Ventas por Categoría de Servicio
+```{r Ventas por Categoría de Servicio}
+
+# ================================
+#  DATOS DE EJEMPLO (FICTICIOS)
+# ================================
+set.seed(123)
+datos <- data.frame(
+  Departamento = c("La Paz", "Oruro", "Cochabamba", "Santa Cruz", "Potosí", 
+                   "Sucre", "Tarija", "Beni", "Pando"),
+  Ventas = sample(1000:8000, 9),
+  Clientes = sample(100:700, 9),
+  Mes = month.name[1:9],
+  Edad = sample(20:60, 9)
+)
+
+# ================================
+#  INTERFAZ DE USUARIO
+# ================================
+ui <- bs4DashPage(
+  title = "Dashboard Interactivo",
+  header = bs4DashNavbar(title = "📊 Dashboard Bolivia"),
+  sidebar = bs4DashSidebar(
+    skin = "light",
+    status = "primary",
+    bs4SidebarMenu(
+      bs4SidebarMenuItem("Inicio", tabName = "inicio", icon = icon("home")),
+      bs4SidebarMenuItem("Ventas", tabName = "ventas", icon = icon("chart-bar")),
+      bs4SidebarMenuItem("Clientes", tabName = "clientes", icon = icon("users")),
+      bs4SidebarMenuItem("Comparativas", tabName = "comparativas", icon = icon("balance-scale"))
+    )
+  ),
+  body = bs4DashBody(
+    bs4TabItems(
+      bs4TabItem(tabName = "inicio",
+                 h2("📌 Bienvenido al Dashboard de Bolivia"),
+                 p("Este panel contiene gráficas interactivas generadas con highcharter.")
+      ),
+      bs4TabItem(tabName = "ventas",
+                 fluidRow(
+                   bs4Card(title = "Ventas por Departamento", width = 6, solidHeader = TRUE,
+                           highchartOutput("graf_barras")),
+                   bs4Card(title = "Ventas por Edad", width = 6, solidHeader = TRUE,
+                           highchartOutput("graf_linea"))
+                 )
+      ),
+      bs4TabItem(tabName = "clientes",
+                 fluidRow(
+                   bs4Card(title = "Participación de Clientes", width = 6, solidHeader = TRUE,
+                           highchartOutput("graf_torta")),
+                   bs4Card(title = "Clientes por Departamento", width = 6, solidHeader = TRUE,
+                           highchartOutput("graf_clientes"))
+                 )
+      ),
+      bs4TabItem(tabName = "comparativas",
+                 fluidRow(
+                   bs4Card(title = "Comparativa de Ventas vs Clientes", width = 12, solidHeader = TRUE,
+                           highchartOutput("graf_comparativo"))
+                 )
+      )
+    )
+  )
+)
+
+# ================================
+#  SERVIDOR
+# ================================
+server <- function(input, output) {
+  output$graf_barras <- renderHighchart({
+    hchart(datos, "column", hcaes(x = Departamento, y = Ventas)) %>%
+      hc_title(text = "Ventas por Departamento") %>%
+      hc_add_theme(hc_theme_flat())
+  })
+  
+  output$graf_linea <- renderHighchart({
+    datos_filtrados <- datos %>%
+      filter(!is.na(Edad)) %>%
+      group_by(Edad) %>%
+      summarise(Ventas = sum(Ventas, na.rm = TRUE), .groups = "drop")
+    
+    highchart() %>%
+      hc_chart(type = "line") %>%
+      hc_title(text = "Tendencia de Ventas por Edad") %>%
+      hc_xAxis(categories = datos_filtrados$Edad, title = list(text = "Edad")) %>%
+      hc_yAxis(title = list(text = "Ventas")) %>%
+      hc_series(
+        list(
+          name = "Ventas",
+          data = datos_filtrados$Ventas
+        )
+      ) %>%
+      hc_tooltip(pointFormat = "Ventas: <b>{point.y}</b>")
+  })
+  
+  
+  output$graf_torta <- renderHighchart({
+    hchart(datos, "pie", hcaes(name = Departamento, y = Clientes)) %>%
+      hc_title(text = "Participación de Clientes por Departamento")
+  })
+  
+  output$graf_clientes <- renderHighchart({
+    hchart(datos, "bar", hcaes(x = Departamento, y = Clientes)) %>%
+      hc_title(text = "Clientes por Departamento")
+  })
+  
+  output$graf_comparativo <- renderHighchart({
+    hchart(datos, "scatter", hcaes(x = Ventas, y = Clientes, group = Departamento)) %>%
+      hc_title(text = "Ventas vs Clientes por Departamento")
+  })
+}
+
+# ================================
+#  EJECUTAR LA APLICACIÓN
+# ================================
+shinyApp(ui, server)
+
+```
+
+```{r}
+# ================================
+#  INSTALACIÓN DE PAQUETES
+# ================================
+if (!require("bs4Dash")) install.packages("bs4Dash")
+if (!require("shiny")) install.packages("shiny")
+if (!require("dplyr")) install.packages("dplyr")
+if (!require("highcharter")) install.packages("highcharter")
+if (!require("readr")) install.packages("readr")
+
+# ================================
+#  CARGA DE LIBRERÍAS
+# ================================
+library(bs4Dash)
+library(shiny)
+library(dplyr)
+library(highcharter)
+library(readr)
+
+# ================================
+#  CARGA DE DATOS
+# ================================
+df_clientes <- read_csv("_data/marketing_clientes.csv")
+df_servicios <- read_csv("_data/marketing_servicios.csv")
+df_campanias <- read_csv("_data/marketing_campañas.csv")
+df_transacciones <- read_csv("_data/marketing_transacciones.csv")
+names(df_clientes) <- tolower(names(df_clientes))
+names(df_servicios) <- tolower(names(df_servicios))
+names(df_campanias) <- tolower(names(df_campanias))
+names(df_transacciones) <- tolower(names(df_transacciones))
+# ================================
+#  DATOS PROCESADOS
+# ================================
+
+# 1. Total de transacciones por ciudad
+transacciones_ciudad <- df_clientes %>%
+  inner_join(df_transacciones, by = "id_cliente") %>%
+  group_by(ciudad) %>%
+  summarise(total = sum(monto, na.rm = TRUE), .groups = "drop")
+
+# 2. Total de transacciones por servicio
+transacciones_servicio <- df_transacciones %>%
+  inner_join(df_servicios, by = "id_servicio") %>%
+  group_by(nombre_servicio) %>%
+  summarise(total = sum(monto, na.rm = TRUE), .groups = "drop")
+
+# ================================
+#  UI
+# ================================
+ui <- bs4DashPage(
+  title = "Dashboard Marketing",
+  header = bs4DashNavbar(title = "📈 Panel de Marketing"),
+  sidebar = bs4DashSidebar(
+    skin = "light",
+    status = "primary",
+    bs4SidebarMenu(
+      bs4SidebarMenuItem("Inicio", tabName = "inicio", icon = icon("home")),
+      bs4SidebarMenuItem("Transacciones", tabName = "transacciones", icon = icon("money-bill")),
+      bs4SidebarMenuItem("Clientes", tabName = "clientes", icon = icon("users"))
+    )
+  ),
+  body = bs4DashBody(
+    bs4TabItems(
+      bs4TabItem(tabName = "inicio",
+                 h2("👋 Bienvenido al Dashboard de Marketing"),
+                 p("Visualiza estadísticas clave a partir de tus campañas, clientes y servicios.")
+      ),
+      bs4TabItem(tabName = "transacciones",
+                 fluidRow(
+                   bs4Card(title = "Monto Total por Ciudad", width = 6, solidHeader = TRUE,
+                           highchartOutput("graf_ciudad")),
+                   bs4Card(title = "Monto Total por Servicio", width = 6, solidHeader = TRUE,
+                           highchartOutput("graf_servicio"))
+                 )
+      ),
+      bs4TabItem(tabName = "clientes",
+                 fluidRow(
+                   bs4Card(title = "Cantidad de Clientes por Ciudad", width = 6, solidHeader = TRUE,
+                           highchartOutput("graf_clientes_ciudad"))
+                 )
+      )
+    )
+  )
+)
+
+# ================================
+#  SERVER
+# ================================
+server <- function(input, output) {
+
+  output$graf_ciudad <- renderHighchart({
+    hchart(transacciones_ciudad, "column", hcaes(x = ciudad, y = total)) %>%
+      hc_title(text = "Transacciones por Ciudad") %>%
+      hc_add_theme(hc_theme_flat())
+  })
+
+  output$graf_servicio <- renderHighchart({
+    hchart(transacciones_servicio, "bar", hcaes(x = nombre_servicio, y = total)) %>%
+      hc_title(text = "Transacciones por Servicio") %>%
+      hc_add_theme(hc_theme_flat())
+  })
+
+  output$graf_clientes_ciudad <- renderHighchart({
+    df_clientes %>%
+      count(ciudad) %>%
+      hchart("pie", hcaes(name = ciudad, y = n)) %>%
+      hc_title(text = "Distribución de Clientes por Ciudad")
+  })
+}
+
+# ================================
+#  APP
+# ================================
+shinyApp(ui, server)
+
+```
+

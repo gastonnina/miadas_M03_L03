@@ -75,7 +75,7 @@ summary(df_datos_completos)
 ```
 📊 2: Visualizaciones interactivas
 =======================================================================
-Row
+Row {.tabset}
 -----------------------------------------------------------------------
 ### ✅ 1. Ventas por Categoría de Servicio
 
@@ -99,18 +99,18 @@ hchart(
   hc_yAxis(title = list(text = "Frecuencia"))
 
 ```
-Row
------------------------------------------------------------------------
 ### 📍 3. Ventas por Departamento
 ```{r}
 df_datos_completos %>%
   group_by(departamento) %>%
   summarise(ventas_totales = sum(total, na.rm = TRUE)) %>%
-  hchart("bar", hcaes(x = departamento, y = ventas_totales)) %>%
+  arrange(desc(ventas_totales)) %>%  # Ordena de mayor a menor
+  hchart("bar", hcaes(x = departamento, y = ventas_totales, color = ventas_totales)) %>%
   hc_title(text = "Ventas por Departamento") %>%
   hc_xAxis(title = list(text = "Departamento")) %>%
-  hc_yAxis(title = list(text = "Total en Bs"))
-
+  hc_yAxis(title = list(text = "Total en Bs")) %>%
+  hc_colors(c("#1f77b4", "#ff7f0e", "#2ca02c", "#d62728", "#9467bd", "#8c564b", "#e377c2")) %>%
+  hc_legend(enabled = TRUE, title = list(text = "Departamentos"))
 ```
 
 ### 🚻 4. Ventas por Género
@@ -123,8 +123,7 @@ df_datos_completos %>%
   hc_title(text = "Ventas por Género") %>%
   hc_tooltip(pointFormat = "{series.name}: <b>{point.percentage:.1f}%</b>")
 ```
-Row
------------------------------------------------------------------------
+
 ### 🌆 5. Participación por Ciudad
 ```{r}
 df_datos_completos %>%
@@ -148,8 +147,7 @@ df_datos_completos %>%
   hc_yAxis(title = list(text = "Total en Bs"))
 
 ```
-Row
------------------------------------------------------------------------
+
 ### 📊 7. Histograma de Frecuencia de Ventas
 
 ```{r}
@@ -171,7 +169,7 @@ hchart(df_datos_completos, "scatter", hcaes(x = edad, y = total)) %>%
   hc_xAxis(title = list(text = "Edad del Cliente")) %>%
   hc_yAxis(title = list(text = "Monto de la Transacción (Bs)"))
 ```
-
+</div>
 
 🧭️ 3: Visualización geoespacial con rutas
 =======================================================================

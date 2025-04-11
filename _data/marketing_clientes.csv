@@ -1,0 +1,1001 @@
+ID_Cliente,Nombre,Edad,Genero,Departamento,Ciudad
+1,Cliente_1,56,Masculino,Chuquisaca,Sucre
+2,Cliente_2,46,Otro,Potosí,Potosí
+3,Cliente_3,32,Otro,Oruro,Oruro
+4,Cliente_4,60,Femenino,Beni,Trinidad
+5,Cliente_5,25,Otro,Pando,Cobija
+6,Cliente_6,38,Otro,Oruro,Oruro
+7,Cliente_7,56,Otro,Potosí,Potosí
+8,Cliente_8,36,Otro,Beni,Trinidad
+9,Cliente_9,40,Masculino,Potosí,Potosí
+10,Cliente_10,28,Femenino,La Paz,La Paz
+11,Cliente_11,28,Masculino,Oruro,Oruro
+12,Cliente_12,41,Otro,Tarija,Tarija
+13,Cliente_13,53,Otro,Chuquisaca,Sucre
+14,Cliente_14,57,Masculino,Oruro,Oruro
+15,Cliente_15,41,Otro,Beni,Trinidad
+16,Cliente_16,20,Otro,Chuquisaca,Sucre
+17,Cliente_17,39,Masculino,Potosí,Uyuni
+18,Cliente_18,19,Otro,Oruro,Oruro
+19,Cliente_19,41,Masculino,Oruro,Oruro
+20,Cliente_20,61,Femenino,La Paz,La Paz
+21,Cliente_21,47,Otro,Oruro,Oruro
+22,Cliente_22,55,Femenino,Cochabamba,Cochabamba
+23,Cliente_23,19,Otro,La Paz,La Paz
+24,Cliente_24,38,Masculino,Potosí,Potosí
+25,Cliente_25,50,Otro,Oruro,Oruro
+26,Cliente_26,29,Femenino,Potosí,Uyuni
+27,Cliente_27,39,Otro,Oruro,Oruro
+28,Cliente_28,61,Otro,Chuquisaca,Sucre
+29,Cliente_29,42,Otro,Oruro,Oruro
+30,Cliente_30,44,Masculino,Oruro,Oruro
+31,Cliente_31,59,Otro,Tarija,Yacuiba
+32,Cliente_32,45,Femenino,Beni,Trinidad
+33,Cliente_33,33,Femenino,Santa Cruz,Santa Cruz
+34,Cliente_34,32,Femenino,Chuquisaca,Sucre
+35,Cliente_35,64,Otro,La Paz,La Paz
+36,Cliente_36,61,Femenino,Tarija,Tarija
+37,Cliente_37,20,Femenino,Potosí,Uyuni
+38,Cliente_38,54,Masculino,Chuquisaca,Sucre
+39,Cliente_39,24,Otro,Potosí,Potosí
+40,Cliente_40,38,Femenino,Santa Cruz,Montero
+41,Cliente_41,26,Femenino,Potosí,Potosí
+42,Cliente_42,56,Otro,Potosí,Uyuni
+43,Cliente_43,35,Femenino,Oruro,Oruro
+44,Cliente_44,21,Masculino,Tarija,Yacuiba
+45,Cliente_45,42,Femenino,Santa Cruz,Santa Cruz
+46,Cliente_46,31,Masculino,Oruro,Oruro
+47,Cliente_47,26,Otro,Santa Cruz,Montero
+48,Cliente_48,43,Femenino,Cochabamba,Quillacollo
+49,Cliente_49,19,Masculino,Potosí,Potosí
+50,Cliente_50,37,Femenino,Potosí,Uyuni
+51,Cliente_51,45,Femenino,Tarija,Tarija
+52,Cliente_52,64,Femenino,Pando,Cobija
+53,Cliente_53,24,Otro,Santa Cruz,Montero
+54,Cliente_54,61,Femenino,Cochabamba,Cochabamba
+55,Cliente_55,25,Masculino,Cochabamba,Quillacollo
+56,Cliente_56,64,Femenino,Cochabamba,Cochabamba
+57,Cliente_57,52,Otro,Santa Cruz,Santa Cruz
+58,Cliente_58,31,Masculino,Beni,Trinidad
+59,Cliente_59,34,Femenino,Potosí,Potosí
+60,Cliente_60,53,Femenino,Tarija,Yacuiba
+61,Cliente_61,57,Otro,Potosí,Potosí
+62,Cliente_62,21,Masculino,Cochabamba,Quillacollo
+63,Cliente_63,19,Otro,Beni,Trinidad
+64,Cliente_64,23,Otro,Potosí,Uyuni
+65,Cliente_65,59,Otro,Beni,Trinidad
+66,Cliente_66,21,Masculino,Chuquisaca,Sucre
+67,Cliente_67,46,Otro,Chuquisaca,Sucre
+68,Cliente_68,35,Femenino,Oruro,Oruro
+69,Cliente_69,43,Otro,Santa Cruz,Santa Cruz
+70,Cliente_70,61,Otro,Santa Cruz,Montero
+71,Cliente_71,51,Femenino,Cochabamba,Cochabamba
+72,Cliente_72,27,Femenino,Oruro,Oruro
+73,Cliente_73,53,Masculino,Potosí,Uyuni
+74,Cliente_74,31,Masculino,Oruro,Oruro
+75,Cliente_75,48,Femenino,Tarija,Tarija
+76,Cliente_76,32,Femenino,Oruro,Oruro
+77,Cliente_77,25,Otro,Chuquisaca,Sucre
+78,Cliente_78,31,Otro,Beni,Trinidad
+79,Cliente_79,40,Femenino,La Paz,La Paz
+80,Cliente_80,57,Masculino,Beni,Trinidad
+81,Cliente_81,38,Masculino,Chuquisaca,Sucre
+82,Cliente_82,33,Otro,Santa Cruz,Montero
+83,Cliente_83,62,Femenino,Cochabamba,Cochabamba
+84,Cliente_84,35,Femenino,Tarija,Tarija
+85,Cliente_85,64,Masculino,Beni,Trinidad
+86,Cliente_86,41,Masculino,Potosí,Potosí
+87,Cliente_87,43,Otro,Santa Cruz,Montero
+88,Cliente_88,42,Femenino,Chuquisaca,Sucre
+89,Cliente_89,62,Otro,La Paz,El Alto
+90,Cliente_90,58,Otro,Santa Cruz,Santa Cruz
+91,Cliente_91,46,Masculino,Chuquisaca,Sucre
+92,Cliente_92,32,Masculino,Beni,Trinidad
+93,Cliente_93,62,Femenino,Potosí,Potosí
+94,Cliente_94,18,Femenino,Pando,Cobija
+95,Cliente_95,42,Femenino,La Paz,La Paz
+96,Cliente_96,24,Masculino,Oruro,Oruro
+97,Cliente_97,26,Masculino,Pando,Cobija
+98,Cliente_98,41,Otro,La Paz,La Paz
+99,Cliente_99,18,Otro,La Paz,La Paz
+100,Cliente_100,61,Femenino,Oruro,Oruro
+101,Cliente_101,25,Femenino,Tarija,Yacuiba
+102,Cliente_102,41,Otro,Beni,Trinidad
+103,Cliente_103,28,Otro,Potosí,Potosí
+104,Cliente_104,34,Otro,Cochabamba,Quillacollo
+105,Cliente_105,25,Masculino,La Paz,La Paz
+106,Cliente_106,52,Otro,Pando,Cobija
+107,Cliente_107,52,Femenino,Potosí,Potosí
+108,Cliente_108,50,Femenino,Tarija,Yacuiba
+109,Cliente_109,22,Otro,Potosí,Uyuni
+110,Cliente_110,59,Femenino,Chuquisaca,Sucre
+111,Cliente_111,56,Femenino,Oruro,Oruro
+112,Cliente_112,58,Femenino,Tarija,Tarija
+113,Cliente_113,45,Masculino,Beni,Trinidad
+114,Cliente_114,24,Femenino,Tarija,Tarija
+115,Cliente_115,26,Otro,Chuquisaca,Sucre
+116,Cliente_116,25,Otro,La Paz,El Alto
+117,Cliente_117,29,Femenino,Potosí,Uyuni
+118,Cliente_118,51,Femenino,Chuquisaca,Sucre
+119,Cliente_119,50,Femenino,Oruro,Oruro
+120,Cliente_120,40,Femenino,Cochabamba,Cochabamba
+121,Cliente_121,41,Femenino,Chuquisaca,Sucre
+122,Cliente_122,54,Otro,Potosí,Uyuni
+123,Cliente_123,52,Femenino,Tarija,Yacuiba
+124,Cliente_124,61,Femenino,Oruro,Oruro
+125,Cliente_125,57,Otro,La Paz,La Paz
+126,Cliente_126,39,Otro,Chuquisaca,Sucre
+127,Cliente_127,44,Femenino,Cochabamba,Quillacollo
+128,Cliente_128,52,Femenino,Santa Cruz,Santa Cruz
+129,Cliente_129,18,Femenino,Potosí,Potosí
+130,Cliente_130,52,Masculino,Oruro,Oruro
+131,Cliente_131,54,Masculino,Cochabamba,Quillacollo
+132,Cliente_132,64,Otro,Oruro,Oruro
+133,Cliente_133,31,Masculino,Chuquisaca,Sucre
+134,Cliente_134,20,Otro,La Paz,El Alto
+135,Cliente_135,18,Masculino,Tarija,Tarija
+136,Cliente_136,22,Femenino,Pando,Cobija
+137,Cliente_137,43,Femenino,Beni,Trinidad
+138,Cliente_138,31,Masculino,Chuquisaca,Sucre
+139,Cliente_139,56,Femenino,Tarija,Yacuiba
+140,Cliente_140,44,Otro,Oruro,Oruro
+141,Cliente_141,26,Masculino,Tarija,Yacuiba
+142,Cliente_142,32,Masculino,Oruro,Oruro
+143,Cliente_143,32,Otro,Chuquisaca,Sucre
+144,Cliente_144,43,Masculino,Tarija,Tarija
+145,Cliente_145,59,Masculino,Potosí,Potosí
+146,Cliente_146,30,Femenino,Cochabamba,Cochabamba
+147,Cliente_147,49,Masculino,Oruro,Oruro
+148,Cliente_148,56,Otro,La Paz,La Paz
+149,Cliente_149,49,Otro,Beni,Trinidad
+150,Cliente_150,21,Masculino,La Paz,El Alto
+151,Cliente_151,47,Femenino,Santa Cruz,Montero
+152,Cliente_152,54,Masculino,Tarija,Tarija
+153,Cliente_153,40,Otro,Chuquisaca,Sucre
+154,Cliente_154,56,Femenino,Beni,Trinidad
+155,Cliente_155,62,Otro,Cochabamba,Quillacollo
+156,Cliente_156,32,Otro,Santa Cruz,Montero
+157,Cliente_157,60,Masculino,Beni,Trinidad
+158,Cliente_158,46,Femenino,Chuquisaca,Sucre
+159,Cliente_159,53,Otro,Pando,Cobija
+160,Cliente_160,30,Masculino,Beni,Trinidad
+161,Cliente_161,49,Masculino,Potosí,Potosí
+162,Cliente_162,24,Otro,Oruro,Oruro
+163,Cliente_163,39,Otro,Potosí,Potosí
+164,Cliente_164,45,Masculino,Santa Cruz,Montero
+165,Cliente_165,19,Femenino,Tarija,Yacuiba
+166,Cliente_166,59,Otro,Beni,Trinidad
+167,Cliente_167,62,Masculino,Tarija,Tarija
+168,Cliente_168,23,Otro,Beni,Trinidad
+169,Cliente_169,45,Otro,Potosí,Potosí
+170,Cliente_170,45,Femenino,Beni,Trinidad
+171,Cliente_171,61,Otro,Beni,Trinidad
+172,Cliente_172,61,Otro,Santa Cruz,Santa Cruz
+173,Cliente_173,37,Otro,Santa Cruz,Santa Cruz
+174,Cliente_174,47,Otro,Pando,Cobija
+175,Cliente_175,28,Masculino,Tarija,Tarija
+176,Cliente_176,45,Femenino,Chuquisaca,Sucre
+177,Cliente_177,42,Masculino,Chuquisaca,Sucre
+178,Cliente_178,56,Femenino,Cochabamba,Quillacollo
+179,Cliente_179,50,Femenino,Santa Cruz,Santa Cruz
+180,Cliente_180,18,Otro,Santa Cruz,Santa Cruz
+181,Cliente_181,44,Otro,Beni,Trinidad
+182,Cliente_182,30,Femenino,Santa Cruz,Montero
+183,Cliente_183,58,Masculino,Santa Cruz,Santa Cruz
+184,Cliente_184,20,Masculino,Santa Cruz,Montero
+185,Cliente_185,56,Masculino,Cochabamba,Cochabamba
+186,Cliente_186,23,Femenino,Chuquisaca,Sucre
+187,Cliente_187,25,Masculino,Pando,Cobija
+188,Cliente_188,44,Masculino,Potosí,Uyuni
+189,Cliente_189,26,Femenino,Potosí,Uyuni
+190,Cliente_190,54,Otro,Pando,Cobija
+191,Cliente_191,50,Femenino,La Paz,La Paz
+192,Cliente_192,59,Otro,La Paz,El Alto
+193,Cliente_193,61,Otro,Santa Cruz,Montero
+194,Cliente_194,41,Otro,Oruro,Oruro
+195,Cliente_195,32,Otro,Cochabamba,Cochabamba
+196,Cliente_196,49,Femenino,Santa Cruz,Montero
+197,Cliente_197,49,Femenino,Oruro,Oruro
+198,Cliente_198,41,Otro,Oruro,Oruro
+199,Cliente_199,58,Masculino,Beni,Trinidad
+200,Cliente_200,29,Otro,Chuquisaca,Sucre
+201,Cliente_201,56,Masculino,Santa Cruz,Montero
+202,Cliente_202,19,Masculino,Chuquisaca,Sucre
+203,Cliente_203,20,Femenino,Cochabamba,Quillacollo
+204,Cliente_204,54,Femenino,Tarija,Tarija
+205,Cliente_205,34,Otro,Santa Cruz,Santa Cruz
+206,Cliente_206,19,Femenino,Oruro,Oruro
+207,Cliente_207,19,Femenino,Oruro,Oruro
+208,Cliente_208,45,Otro,Santa Cruz,Santa Cruz
+209,Cliente_209,40,Femenino,Tarija,Tarija
+210,Cliente_210,54,Otro,Pando,Cobija
+211,Cliente_211,49,Femenino,Oruro,Oruro
+212,Cliente_212,50,Otro,Potosí,Potosí
+213,Cliente_213,18,Masculino,Beni,Trinidad
+214,Cliente_214,36,Femenino,Tarija,Yacuiba
+215,Cliente_215,19,Masculino,Beni,Trinidad
+216,Cliente_216,61,Femenino,Pando,Cobija
+217,Cliente_217,43,Otro,Potosí,Potosí
+218,Cliente_218,49,Masculino,Tarija,Yacuiba
+219,Cliente_219,23,Femenino,Oruro,Oruro
+220,Cliente_220,49,Otro,La Paz,La Paz
+221,Cliente_221,21,Femenino,Oruro,Oruro
+222,Cliente_222,28,Femenino,Pando,Cobija
+223,Cliente_223,34,Masculino,Tarija,Tarija
+224,Cliente_224,55,Otro,Tarija,Tarija
+225,Cliente_225,41,Femenino,Potosí,Uyuni
+226,Cliente_226,22,Masculino,Pando,Cobija
+227,Cliente_227,51,Femenino,Pando,Cobija
+228,Cliente_228,23,Otro,Pando,Cobija
+229,Cliente_229,39,Femenino,Pando,Cobija
+230,Cliente_230,28,Femenino,Tarija,Yacuiba
+231,Cliente_231,33,Masculino,Oruro,Oruro
+232,Cliente_232,50,Masculino,Tarija,Yacuiba
+233,Cliente_233,26,Otro,Chuquisaca,Sucre
+234,Cliente_234,23,Otro,Potosí,Potosí
+235,Cliente_235,33,Femenino,Beni,Trinidad
+236,Cliente_236,46,Femenino,Potosí,Uyuni
+237,Cliente_237,20,Masculino,Cochabamba,Cochabamba
+238,Cliente_238,37,Femenino,Chuquisaca,Sucre
+239,Cliente_239,53,Otro,Chuquisaca,Sucre
+240,Cliente_240,36,Femenino,Santa Cruz,Santa Cruz
+241,Cliente_241,43,Otro,Oruro,Oruro
+242,Cliente_242,20,Femenino,Cochabamba,Quillacollo
+243,Cliente_243,36,Masculino,Santa Cruz,Montero
+244,Cliente_244,37,Otro,Oruro,Oruro
+245,Cliente_245,49,Masculino,Santa Cruz,Santa Cruz
+246,Cliente_246,24,Femenino,Beni,Trinidad
+247,Cliente_247,58,Masculino,Oruro,Oruro
+248,Cliente_248,50,Masculino,Chuquisaca,Sucre
+249,Cliente_249,57,Femenino,Cochabamba,Quillacollo
+250,Cliente_250,56,Otro,Tarija,Tarija
+251,Cliente_251,35,Femenino,Santa Cruz,Santa Cruz
+252,Cliente_252,57,Otro,Beni,Trinidad
+253,Cliente_253,18,Femenino,Tarija,Tarija
+254,Cliente_254,28,Otro,Chuquisaca,Sucre
+255,Cliente_255,45,Femenino,La Paz,La Paz
+256,Cliente_256,42,Masculino,Santa Cruz,Santa Cruz
+257,Cliente_257,40,Otro,Santa Cruz,Montero
+258,Cliente_258,48,Femenino,Oruro,Oruro
+259,Cliente_259,47,Femenino,Pando,Cobija
+260,Cliente_260,59,Otro,Beni,Trinidad
+261,Cliente_261,52,Femenino,Potosí,Uyuni
+262,Cliente_262,24,Masculino,Potosí,Potosí
+263,Cliente_263,33,Femenino,Oruro,Oruro
+264,Cliente_264,43,Masculino,Potosí,Potosí
+265,Cliente_265,19,Otro,Cochabamba,Quillacollo
+266,Cliente_266,18,Masculino,Tarija,Tarija
+267,Cliente_267,29,Femenino,La Paz,La Paz
+268,Cliente_268,22,Masculino,Beni,Trinidad
+269,Cliente_269,54,Masculino,Chuquisaca,Sucre
+270,Cliente_270,49,Masculino,Cochabamba,Quillacollo
+271,Cliente_271,26,Masculino,Cochabamba,Quillacollo
+272,Cliente_272,58,Otro,Tarija,Tarija
+273,Cliente_273,52,Masculino,Oruro,Oruro
+274,Cliente_274,36,Masculino,La Paz,La Paz
+275,Cliente_275,33,Masculino,Beni,Trinidad
+276,Cliente_276,20,Otro,Pando,Cobija
+277,Cliente_277,37,Otro,Santa Cruz,Santa Cruz
+278,Cliente_278,41,Otro,Tarija,Yacuiba
+279,Cliente_279,50,Masculino,Oruro,Oruro
+280,Cliente_280,41,Otro,Pando,Cobija
+281,Cliente_281,28,Otro,Cochabamba,Quillacollo
+282,Cliente_282,25,Femenino,Oruro,Oruro
+283,Cliente_283,53,Femenino,Chuquisaca,Sucre
+284,Cliente_284,55,Otro,Santa Cruz,Montero
+285,Cliente_285,57,Femenino,La Paz,La Paz
+286,Cliente_286,37,Femenino,Tarija,Yacuiba
+287,Cliente_287,52,Masculino,Santa Cruz,Santa Cruz
+288,Cliente_288,42,Otro,Santa Cruz,Montero
+289,Cliente_289,52,Otro,La Paz,El Alto
+290,Cliente_290,42,Otro,Pando,Cobija
+291,Cliente_291,46,Masculino,Santa Cruz,Montero
+292,Cliente_292,35,Femenino,La Paz,El Alto
+293,Cliente_293,63,Masculino,Potosí,Potosí
+294,Cliente_294,35,Femenino,Pando,Cobija
+295,Cliente_295,19,Masculino,La Paz,La Paz
+296,Cliente_296,52,Masculino,Oruro,Oruro
+297,Cliente_297,33,Otro,Pando,Cobija
+298,Cliente_298,58,Masculino,Cochabamba,Quillacollo
+299,Cliente_299,53,Femenino,Beni,Trinidad
+300,Cliente_300,50,Otro,Oruro,Oruro
+301,Cliente_301,21,Masculino,Tarija,Yacuiba
+302,Cliente_302,50,Masculino,Pando,Cobija
+303,Cliente_303,31,Femenino,La Paz,El Alto
+304,Cliente_304,38,Otro,La Paz,El Alto
+305,Cliente_305,37,Masculino,Beni,Trinidad
+306,Cliente_306,25,Femenino,Tarija,Yacuiba
+307,Cliente_307,24,Masculino,Pando,Cobija
+308,Cliente_308,20,Masculino,Beni,Trinidad
+309,Cliente_309,34,Otro,La Paz,La Paz
+310,Cliente_310,50,Otro,Santa Cruz,Montero
+311,Cliente_311,29,Masculino,Tarija,Tarija
+312,Cliente_312,39,Masculino,Tarija,Yacuiba
+313,Cliente_313,39,Femenino,Santa Cruz,Montero
+314,Cliente_314,63,Otro,Santa Cruz,Montero
+315,Cliente_315,47,Femenino,Beni,Trinidad
+316,Cliente_316,55,Femenino,Potosí,Potosí
+317,Cliente_317,55,Masculino,Cochabamba,Quillacollo
+318,Cliente_318,62,Otro,Oruro,Oruro
+319,Cliente_319,25,Masculino,Oruro,Oruro
+320,Cliente_320,44,Otro,Pando,Cobija
+321,Cliente_321,44,Masculino,Chuquisaca,Sucre
+322,Cliente_322,51,Otro,Beni,Trinidad
+323,Cliente_323,38,Otro,Beni,Trinidad
+324,Cliente_324,47,Masculino,Tarija,Yacuiba
+325,Cliente_325,50,Femenino,Santa Cruz,Montero
+326,Cliente_326,45,Otro,Tarija,Yacuiba
+327,Cliente_327,64,Otro,Potosí,Potosí
+328,Cliente_328,50,Masculino,Potosí,Potosí
+329,Cliente_329,22,Femenino,Potosí,Potosí
+330,Cliente_330,36,Otro,La Paz,La Paz
+331,Cliente_331,21,Masculino,Potosí,Potosí
+332,Cliente_332,52,Masculino,Tarija,Tarija
+333,Cliente_333,34,Masculino,Santa Cruz,Santa Cruz
+334,Cliente_334,61,Otro,Santa Cruz,Santa Cruz
+335,Cliente_335,45,Otro,Potosí,Uyuni
+336,Cliente_336,47,Masculino,Pando,Cobija
+337,Cliente_337,46,Femenino,Chuquisaca,Sucre
+338,Cliente_338,63,Otro,Beni,Trinidad
+339,Cliente_339,23,Masculino,Oruro,Oruro
+340,Cliente_340,52,Otro,Chuquisaca,Sucre
+341,Cliente_341,58,Femenino,Cochabamba,Cochabamba
+342,Cliente_342,54,Otro,Pando,Cobija
+343,Cliente_343,41,Otro,Chuquisaca,Sucre
+344,Cliente_344,46,Masculino,Chuquisaca,Sucre
+345,Cliente_345,63,Otro,Chuquisaca,Sucre
+346,Cliente_346,48,Femenino,Santa Cruz,Santa Cruz
+347,Cliente_347,52,Femenino,Tarija,Tarija
+348,Cliente_348,50,Masculino,Santa Cruz,Montero
+349,Cliente_349,38,Otro,Chuquisaca,Sucre
+350,Cliente_350,49,Otro,Chuquisaca,Sucre
+351,Cliente_351,40,Otro,La Paz,La Paz
+352,Cliente_352,50,Femenino,Santa Cruz,Montero
+353,Cliente_353,20,Femenino,Oruro,Oruro
+354,Cliente_354,35,Masculino,Tarija,Yacuiba
+355,Cliente_355,42,Otro,Tarija,Yacuiba
+356,Cliente_356,59,Otro,Beni,Trinidad
+357,Cliente_357,48,Otro,La Paz,La Paz
+358,Cliente_358,20,Otro,Cochabamba,Quillacollo
+359,Cliente_359,57,Otro,Tarija,Yacuiba
+360,Cliente_360,63,Masculino,Potosí,Potosí
+361,Cliente_361,41,Masculino,Oruro,Oruro
+362,Cliente_362,49,Otro,Potosí,Potosí
+363,Cliente_363,64,Femenino,Potosí,Potosí
+364,Cliente_364,39,Femenino,Cochabamba,Cochabamba
+365,Cliente_365,40,Otro,Potosí,Uyuni
+366,Cliente_366,19,Femenino,Oruro,Oruro
+367,Cliente_367,44,Otro,Tarija,Yacuiba
+368,Cliente_368,59,Femenino,Cochabamba,Cochabamba
+369,Cliente_369,19,Femenino,Beni,Trinidad
+370,Cliente_370,43,Otro,La Paz,La Paz
+371,Cliente_371,34,Masculino,Cochabamba,Quillacollo
+372,Cliente_372,57,Otro,Potosí,Uyuni
+373,Cliente_373,50,Femenino,Potosí,Uyuni
+374,Cliente_374,26,Otro,Potosí,Potosí
+375,Cliente_375,60,Otro,Chuquisaca,Sucre
+376,Cliente_376,56,Femenino,Cochabamba,Cochabamba
+377,Cliente_377,46,Otro,Tarija,Yacuiba
+378,Cliente_378,59,Femenino,Santa Cruz,Santa Cruz
+379,Cliente_379,43,Femenino,Potosí,Uyuni
+380,Cliente_380,52,Masculino,Tarija,Tarija
+381,Cliente_381,42,Otro,Santa Cruz,Santa Cruz
+382,Cliente_382,41,Masculino,Chuquisaca,Sucre
+383,Cliente_383,30,Femenino,Cochabamba,Cochabamba
+384,Cliente_384,24,Masculino,Pando,Cobija
+385,Cliente_385,53,Femenino,Oruro,Oruro
+386,Cliente_386,62,Masculino,Pando,Cobija
+387,Cliente_387,37,Femenino,Santa Cruz,Santa Cruz
+388,Cliente_388,18,Masculino,Beni,Trinidad
+389,Cliente_389,25,Femenino,Oruro,Oruro
+390,Cliente_390,63,Otro,La Paz,El Alto
+391,Cliente_391,33,Otro,Pando,Cobija
+392,Cliente_392,31,Otro,Santa Cruz,Montero
+393,Cliente_393,29,Otro,Cochabamba,Cochabamba
+394,Cliente_394,40,Masculino,Santa Cruz,Santa Cruz
+395,Cliente_395,32,Otro,Cochabamba,Quillacollo
+396,Cliente_396,45,Otro,Potosí,Potosí
+397,Cliente_397,51,Femenino,Santa Cruz,Montero
+398,Cliente_398,19,Masculino,Pando,Cobija
+399,Cliente_399,49,Femenino,Santa Cruz,Santa Cruz
+400,Cliente_400,40,Masculino,Beni,Trinidad
+401,Cliente_401,39,Femenino,Santa Cruz,Montero
+402,Cliente_402,42,Femenino,Santa Cruz,Montero
+403,Cliente_403,39,Femenino,Potosí,Potosí
+404,Cliente_404,39,Otro,Chuquisaca,Sucre
+405,Cliente_405,59,Masculino,Santa Cruz,Santa Cruz
+406,Cliente_406,23,Otro,Beni,Trinidad
+407,Cliente_407,32,Otro,La Paz,La Paz
+408,Cliente_408,60,Otro,Tarija,Tarija
+409,Cliente_409,54,Otro,Tarija,Yacuiba
+410,Cliente_410,50,Masculino,La Paz,La Paz
+411,Cliente_411,25,Masculino,Cochabamba,Cochabamba
+412,Cliente_412,61,Otro,Santa Cruz,Montero
+413,Cliente_413,61,Femenino,Tarija,Yacuiba
+414,Cliente_414,22,Masculino,Potosí,Uyuni
+415,Cliente_415,56,Masculino,Santa Cruz,Santa Cruz
+416,Cliente_416,21,Femenino,Oruro,Oruro
+417,Cliente_417,23,Masculino,Chuquisaca,Sucre
+418,Cliente_418,62,Masculino,Beni,Trinidad
+419,Cliente_419,49,Otro,Potosí,Potosí
+420,Cliente_420,47,Femenino,Cochabamba,Quillacollo
+421,Cliente_421,64,Masculino,Beni,Trinidad
+422,Cliente_422,52,Masculino,La Paz,El Alto
+423,Cliente_423,57,Otro,Pando,Cobija
+424,Cliente_424,33,Otro,Potosí,Potosí
+425,Cliente_425,30,Otro,Tarija,Yacuiba
+426,Cliente_426,59,Otro,Tarija,Tarija
+427,Cliente_427,47,Masculino,Oruro,Oruro
+428,Cliente_428,36,Masculino,Chuquisaca,Sucre
+429,Cliente_429,34,Femenino,Beni,Trinidad
+430,Cliente_430,36,Otro,Potosí,Potosí
+431,Cliente_431,45,Femenino,Oruro,Oruro
+432,Cliente_432,43,Masculino,Chuquisaca,Sucre
+433,Cliente_433,54,Femenino,Potosí,Uyuni
+434,Cliente_434,43,Masculino,Tarija,Yacuiba
+435,Cliente_435,40,Masculino,Beni,Trinidad
+436,Cliente_436,26,Femenino,La Paz,La Paz
+437,Cliente_437,29,Masculino,Oruro,Oruro
+438,Cliente_438,18,Masculino,Santa Cruz,Montero
+439,Cliente_439,18,Femenino,Beni,Trinidad
+440,Cliente_440,64,Masculino,Tarija,Yacuiba
+441,Cliente_441,51,Femenino,Cochabamba,Cochabamba
+442,Cliente_442,49,Otro,Oruro,Oruro
+443,Cliente_443,42,Otro,Santa Cruz,Santa Cruz
+444,Cliente_444,57,Otro,Pando,Cobija
+445,Cliente_445,62,Otro,Chuquisaca,Sucre
+446,Cliente_446,18,Otro,Pando,Cobija
+447,Cliente_447,33,Otro,Beni,Trinidad
+448,Cliente_448,56,Femenino,Santa Cruz,Montero
+449,Cliente_449,22,Masculino,Pando,Cobija
+450,Cliente_450,39,Femenino,La Paz,La Paz
+451,Cliente_451,46,Masculino,Potosí,Uyuni
+452,Cliente_452,20,Femenino,Potosí,Potosí
+453,Cliente_453,29,Otro,La Paz,La Paz
+454,Cliente_454,43,Otro,Tarija,Tarija
+455,Cliente_455,33,Otro,Potosí,Uyuni
+456,Cliente_456,54,Masculino,Chuquisaca,Sucre
+457,Cliente_457,39,Masculino,Santa Cruz,Santa Cruz
+458,Cliente_458,46,Otro,Pando,Cobija
+459,Cliente_459,31,Otro,Oruro,Oruro
+460,Cliente_460,45,Otro,Beni,Trinidad
+461,Cliente_461,22,Femenino,Tarija,Yacuiba
+462,Cliente_462,64,Femenino,Beni,Trinidad
+463,Cliente_463,47,Masculino,La Paz,El Alto
+464,Cliente_464,63,Femenino,Potosí,Potosí
+465,Cliente_465,22,Femenino,Potosí,Potosí
+466,Cliente_466,29,Otro,Pando,Cobija
+467,Cliente_467,33,Otro,Pando,Cobija
+468,Cliente_468,43,Femenino,Oruro,Oruro
+469,Cliente_469,43,Femenino,Santa Cruz,Montero
+470,Cliente_470,38,Otro,Santa Cruz,Montero
+471,Cliente_471,56,Masculino,Santa Cruz,Montero
+472,Cliente_472,53,Masculino,Santa Cruz,Santa Cruz
+473,Cliente_473,50,Masculino,Beni,Trinidad
+474,Cliente_474,47,Otro,La Paz,El Alto
+475,Cliente_475,54,Masculino,Pando,Cobija
+476,Cliente_476,40,Masculino,La Paz,El Alto
+477,Cliente_477,27,Masculino,Cochabamba,Cochabamba
+478,Cliente_478,22,Femenino,La Paz,La Paz
+479,Cliente_479,53,Masculino,Cochabamba,Quillacollo
+480,Cliente_480,51,Femenino,Cochabamba,Cochabamba
+481,Cliente_481,48,Otro,Oruro,Oruro
+482,Cliente_482,27,Femenino,Cochabamba,Cochabamba
+483,Cliente_483,36,Otro,La Paz,La Paz
+484,Cliente_484,49,Otro,Santa Cruz,Montero
+485,Cliente_485,18,Femenino,Potosí,Potosí
+486,Cliente_486,22,Masculino,Oruro,Oruro
+487,Cliente_487,62,Femenino,Tarija,Tarija
+488,Cliente_488,21,Masculino,Tarija,Tarija
+489,Cliente_489,33,Femenino,Oruro,Oruro
+490,Cliente_490,41,Otro,Potosí,Uyuni
+491,Cliente_491,33,Masculino,Pando,Cobija
+492,Cliente_492,19,Femenino,Beni,Trinidad
+493,Cliente_493,45,Masculino,Santa Cruz,Santa Cruz
+494,Cliente_494,49,Femenino,Tarija,Yacuiba
+495,Cliente_495,44,Otro,Tarija,Yacuiba
+496,Cliente_496,37,Otro,Pando,Cobija
+497,Cliente_497,41,Femenino,Oruro,Oruro
+498,Cliente_498,29,Masculino,Pando,Cobija
+499,Cliente_499,52,Otro,Cochabamba,Cochabamba
+500,Cliente_500,50,Masculino,Oruro,Oruro
+501,Cliente_501,50,Masculino,La Paz,El Alto
+502,Cliente_502,60,Femenino,Potosí,Potosí
+503,Cliente_503,54,Otro,La Paz,El Alto
+504,Cliente_504,29,Otro,Potosí,Potosí
+505,Cliente_505,20,Femenino,Santa Cruz,Montero
+506,Cliente_506,18,Otro,Potosí,Uyuni
+507,Cliente_507,50,Otro,Chuquisaca,Sucre
+508,Cliente_508,57,Otro,Beni,Trinidad
+509,Cliente_509,27,Femenino,Santa Cruz,Montero
+510,Cliente_510,60,Otro,Potosí,Uyuni
+511,Cliente_511,61,Femenino,Pando,Cobija
+512,Cliente_512,46,Otro,Chuquisaca,Sucre
+513,Cliente_513,30,Masculino,Chuquisaca,Sucre
+514,Cliente_514,29,Masculino,Chuquisaca,Sucre
+515,Cliente_515,48,Masculino,Cochabamba,Quillacollo
+516,Cliente_516,63,Masculino,Oruro,Oruro
+517,Cliente_517,19,Otro,Potosí,Uyuni
+518,Cliente_518,52,Femenino,Santa Cruz,Montero
+519,Cliente_519,40,Masculino,Pando,Cobija
+520,Cliente_520,34,Femenino,Santa Cruz,Montero
+521,Cliente_521,43,Otro,Beni,Trinidad
+522,Cliente_522,25,Masculino,Oruro,Oruro
+523,Cliente_523,46,Otro,Pando,Cobija
+524,Cliente_524,43,Otro,Cochabamba,Cochabamba
+525,Cliente_525,27,Masculino,Tarija,Yacuiba
+526,Cliente_526,43,Femenino,La Paz,El Alto
+527,Cliente_527,51,Femenino,Potosí,Uyuni
+528,Cliente_528,58,Femenino,Tarija,Tarija
+529,Cliente_529,24,Masculino,Tarija,Tarija
+530,Cliente_530,21,Femenino,La Paz,La Paz
+531,Cliente_531,62,Femenino,Pando,Cobija
+532,Cliente_532,28,Otro,Oruro,Oruro
+533,Cliente_533,46,Otro,La Paz,El Alto
+534,Cliente_534,53,Femenino,Tarija,Yacuiba
+535,Cliente_535,42,Masculino,Pando,Cobija
+536,Cliente_536,38,Femenino,Santa Cruz,Santa Cruz
+537,Cliente_537,53,Otro,Beni,Trinidad
+538,Cliente_538,27,Otro,Pando,Cobija
+539,Cliente_539,54,Otro,La Paz,El Alto
+540,Cliente_540,26,Masculino,Cochabamba,Cochabamba
+541,Cliente_541,41,Femenino,Santa Cruz,Santa Cruz
+542,Cliente_542,52,Masculino,La Paz,La Paz
+543,Cliente_543,52,Masculino,Potosí,Potosí
+544,Cliente_544,53,Masculino,Santa Cruz,Montero
+545,Cliente_545,35,Femenino,Cochabamba,Cochabamba
+546,Cliente_546,56,Otro,Cochabamba,Cochabamba
+547,Cliente_547,49,Masculino,Santa Cruz,Santa Cruz
+548,Cliente_548,41,Masculino,Cochabamba,Cochabamba
+549,Cliente_549,40,Masculino,Cochabamba,Quillacollo
+550,Cliente_550,49,Femenino,Beni,Trinidad
+551,Cliente_551,54,Femenino,Pando,Cobija
+552,Cliente_552,29,Otro,Santa Cruz,Montero
+553,Cliente_553,30,Otro,Beni,Trinidad
+554,Cliente_554,40,Otro,Pando,Cobija
+555,Cliente_555,42,Otro,Beni,Trinidad
+556,Cliente_556,52,Otro,Santa Cruz,Montero
+557,Cliente_557,58,Femenino,La Paz,La Paz
+558,Cliente_558,47,Masculino,Pando,Cobija
+559,Cliente_559,34,Otro,Tarija,Tarija
+560,Cliente_560,37,Femenino,Oruro,Oruro
+561,Cliente_561,42,Masculino,Beni,Trinidad
+562,Cliente_562,39,Otro,Santa Cruz,Montero
+563,Cliente_563,30,Femenino,Cochabamba,Quillacollo
+564,Cliente_564,36,Masculino,Beni,Trinidad
+565,Cliente_565,53,Otro,Chuquisaca,Sucre
+566,Cliente_566,29,Femenino,Beni,Trinidad
+567,Cliente_567,58,Otro,Beni,Trinidad
+568,Cliente_568,36,Femenino,Pando,Cobija
+569,Cliente_569,29,Masculino,La Paz,La Paz
+570,Cliente_570,26,Femenino,Pando,Cobija
+571,Cliente_571,24,Femenino,Santa Cruz,Santa Cruz
+572,Cliente_572,45,Otro,Oruro,Oruro
+573,Cliente_573,31,Otro,Oruro,Oruro
+574,Cliente_574,48,Femenino,Pando,Cobija
+575,Cliente_575,36,Femenino,Beni,Trinidad
+576,Cliente_576,64,Masculino,Beni,Trinidad
+577,Cliente_577,33,Masculino,Potosí,Potosí
+578,Cliente_578,22,Femenino,Santa Cruz,Santa Cruz
+579,Cliente_579,52,Masculino,Chuquisaca,Sucre
+580,Cliente_580,29,Otro,Potosí,Potosí
+581,Cliente_581,42,Otro,Pando,Cobija
+582,Cliente_582,38,Masculino,Pando,Cobija
+583,Cliente_583,53,Masculino,Chuquisaca,Sucre
+584,Cliente_584,40,Otro,Chuquisaca,Sucre
+585,Cliente_585,33,Femenino,Pando,Cobija
+586,Cliente_586,56,Masculino,Tarija,Tarija
+587,Cliente_587,62,Femenino,La Paz,La Paz
+588,Cliente_588,59,Masculino,Beni,Trinidad
+589,Cliente_589,56,Femenino,Santa Cruz,Santa Cruz
+590,Cliente_590,31,Femenino,Chuquisaca,Sucre
+591,Cliente_591,48,Masculino,Pando,Cobija
+592,Cliente_592,22,Masculino,Potosí,Uyuni
+593,Cliente_593,52,Otro,Santa Cruz,Montero
+594,Cliente_594,40,Masculino,Tarija,Tarija
+595,Cliente_595,46,Otro,Chuquisaca,Sucre
+596,Cliente_596,60,Masculino,Tarija,Tarija
+597,Cliente_597,28,Masculino,Chuquisaca,Sucre
+598,Cliente_598,35,Masculino,Chuquisaca,Sucre
+599,Cliente_599,64,Otro,La Paz,El Alto
+600,Cliente_600,29,Femenino,Tarija,Tarija
+601,Cliente_601,26,Femenino,Pando,Cobija
+602,Cliente_602,27,Masculino,Cochabamba,Cochabamba
+603,Cliente_603,61,Masculino,Tarija,Yacuiba
+604,Cliente_604,34,Otro,Potosí,Potosí
+605,Cliente_605,55,Otro,Pando,Cobija
+606,Cliente_606,24,Otro,Potosí,Potosí
+607,Cliente_607,63,Otro,La Paz,La Paz
+608,Cliente_608,30,Femenino,Santa Cruz,Montero
+609,Cliente_609,57,Otro,La Paz,La Paz
+610,Cliente_610,59,Masculino,Cochabamba,Cochabamba
+611,Cliente_611,26,Masculino,La Paz,El Alto
+612,Cliente_612,44,Masculino,Oruro,Oruro
+613,Cliente_613,19,Femenino,Potosí,Potosí
+614,Cliente_614,22,Femenino,Cochabamba,Cochabamba
+615,Cliente_615,46,Masculino,Beni,Trinidad
+616,Cliente_616,54,Masculino,Beni,Trinidad
+617,Cliente_617,55,Otro,Cochabamba,Cochabamba
+618,Cliente_618,36,Otro,Potosí,Uyuni
+619,Cliente_619,25,Otro,Santa Cruz,Montero
+620,Cliente_620,62,Masculino,La Paz,La Paz
+621,Cliente_621,18,Otro,La Paz,El Alto
+622,Cliente_622,39,Otro,Potosí,Uyuni
+623,Cliente_623,34,Femenino,Cochabamba,Cochabamba
+624,Cliente_624,24,Femenino,Cochabamba,Quillacollo
+625,Cliente_625,42,Masculino,Cochabamba,Cochabamba
+626,Cliente_626,62,Masculino,Pando,Cobija
+627,Cliente_627,21,Masculino,Santa Cruz,Santa Cruz
+628,Cliente_628,53,Femenino,Pando,Cobija
+629,Cliente_629,23,Masculino,Beni,Trinidad
+630,Cliente_630,48,Femenino,Oruro,Oruro
+631,Cliente_631,36,Masculino,Santa Cruz,Montero
+632,Cliente_632,61,Masculino,Cochabamba,Cochabamba
+633,Cliente_633,56,Otro,Chuquisaca,Sucre
+634,Cliente_634,44,Otro,Potosí,Uyuni
+635,Cliente_635,27,Otro,La Paz,La Paz
+636,Cliente_636,43,Masculino,Beni,Trinidad
+637,Cliente_637,36,Femenino,Chuquisaca,Sucre
+638,Cliente_638,56,Femenino,Potosí,Potosí
+639,Cliente_639,20,Masculino,Oruro,Oruro
+640,Cliente_640,62,Masculino,Tarija,Yacuiba
+641,Cliente_641,30,Femenino,Chuquisaca,Sucre
+642,Cliente_642,45,Femenino,Santa Cruz,Santa Cruz
+643,Cliente_643,37,Otro,Potosí,Uyuni
+644,Cliente_644,45,Masculino,Cochabamba,Quillacollo
+645,Cliente_645,25,Otro,Chuquisaca,Sucre
+646,Cliente_646,58,Masculino,La Paz,La Paz
+647,Cliente_647,56,Masculino,Oruro,Oruro
+648,Cliente_648,18,Otro,Chuquisaca,Sucre
+649,Cliente_649,20,Otro,Santa Cruz,Santa Cruz
+650,Cliente_650,30,Femenino,Cochabamba,Cochabamba
+651,Cliente_651,45,Femenino,La Paz,La Paz
+652,Cliente_652,42,Femenino,Santa Cruz,Santa Cruz
+653,Cliente_653,50,Otro,Potosí,Uyuni
+654,Cliente_654,55,Otro,Tarija,Tarija
+655,Cliente_655,23,Masculino,Cochabamba,Quillacollo
+656,Cliente_656,61,Masculino,Beni,Trinidad
+657,Cliente_657,62,Masculino,Pando,Cobija
+658,Cliente_658,49,Masculino,Pando,Cobija
+659,Cliente_659,62,Masculino,Chuquisaca,Sucre
+660,Cliente_660,64,Femenino,Beni,Trinidad
+661,Cliente_661,38,Femenino,La Paz,El Alto
+662,Cliente_662,33,Masculino,Potosí,Uyuni
+663,Cliente_663,38,Otro,La Paz,El Alto
+664,Cliente_664,28,Otro,La Paz,El Alto
+665,Cliente_665,54,Masculino,Beni,Trinidad
+666,Cliente_666,53,Otro,Santa Cruz,Montero
+667,Cliente_667,52,Otro,La Paz,El Alto
+668,Cliente_668,36,Masculino,Santa Cruz,Santa Cruz
+669,Cliente_669,37,Otro,Santa Cruz,Montero
+670,Cliente_670,35,Masculino,Potosí,Potosí
+671,Cliente_671,64,Masculino,Oruro,Oruro
+672,Cliente_672,58,Femenino,Oruro,Oruro
+673,Cliente_673,31,Femenino,Pando,Cobija
+674,Cliente_674,32,Femenino,Potosí,Potosí
+675,Cliente_675,48,Otro,Cochabamba,Cochabamba
+676,Cliente_676,18,Femenino,Potosí,Potosí
+677,Cliente_677,20,Otro,Potosí,Uyuni
+678,Cliente_678,33,Otro,La Paz,La Paz
+679,Cliente_679,40,Femenino,Pando,Cobija
+680,Cliente_680,28,Femenino,Chuquisaca,Sucre
+681,Cliente_681,29,Masculino,Oruro,Oruro
+682,Cliente_682,27,Otro,La Paz,La Paz
+683,Cliente_683,49,Otro,Potosí,Uyuni
+684,Cliente_684,33,Otro,Santa Cruz,Montero
+685,Cliente_685,25,Masculino,Potosí,Uyuni
+686,Cliente_686,55,Masculino,Pando,Cobija
+687,Cliente_687,29,Femenino,Santa Cruz,Montero
+688,Cliente_688,41,Otro,Pando,Cobija
+689,Cliente_689,45,Masculino,Santa Cruz,Santa Cruz
+690,Cliente_690,25,Otro,Potosí,Uyuni
+691,Cliente_691,45,Masculino,La Paz,La Paz
+692,Cliente_692,53,Otro,Santa Cruz,Montero
+693,Cliente_693,43,Masculino,Oruro,Oruro
+694,Cliente_694,25,Femenino,Oruro,Oruro
+695,Cliente_695,45,Masculino,Chuquisaca,Sucre
+696,Cliente_696,45,Otro,Santa Cruz,Montero
+697,Cliente_697,54,Otro,Oruro,Oruro
+698,Cliente_698,58,Otro,La Paz,La Paz
+699,Cliente_699,53,Otro,Oruro,Oruro
+700,Cliente_700,44,Masculino,Oruro,Oruro
+701,Cliente_701,34,Masculino,Oruro,Oruro
+702,Cliente_702,26,Masculino,Santa Cruz,Montero
+703,Cliente_703,50,Masculino,Tarija,Yacuiba
+704,Cliente_704,37,Masculino,Cochabamba,Quillacollo
+705,Cliente_705,30,Otro,Beni,Trinidad
+706,Cliente_706,45,Masculino,Cochabamba,Quillacollo
+707,Cliente_707,46,Femenino,Santa Cruz,Santa Cruz
+708,Cliente_708,30,Femenino,Pando,Cobija
+709,Cliente_709,63,Femenino,Cochabamba,Quillacollo
+710,Cliente_710,52,Femenino,La Paz,La Paz
+711,Cliente_711,23,Masculino,La Paz,El Alto
+712,Cliente_712,35,Femenino,La Paz,La Paz
+713,Cliente_713,22,Masculino,Tarija,Tarija
+714,Cliente_714,64,Masculino,La Paz,El Alto
+715,Cliente_715,42,Masculino,La Paz,La Paz
+716,Cliente_716,19,Masculino,Pando,Cobija
+717,Cliente_717,27,Femenino,Chuquisaca,Sucre
+718,Cliente_718,47,Otro,Chuquisaca,Sucre
+719,Cliente_719,62,Femenino,Tarija,Tarija
+720,Cliente_720,22,Otro,La Paz,La Paz
+721,Cliente_721,50,Otro,Beni,Trinidad
+722,Cliente_722,18,Femenino,Santa Cruz,Montero
+723,Cliente_723,35,Masculino,Oruro,Oruro
+724,Cliente_724,49,Otro,Chuquisaca,Sucre
+725,Cliente_725,64,Masculino,Chuquisaca,Sucre
+726,Cliente_726,28,Femenino,La Paz,El Alto
+727,Cliente_727,38,Masculino,Chuquisaca,Sucre
+728,Cliente_728,43,Femenino,Oruro,Oruro
+729,Cliente_729,42,Masculino,La Paz,La Paz
+730,Cliente_730,39,Masculino,Oruro,Oruro
+731,Cliente_731,44,Masculino,Potosí,Potosí
+732,Cliente_732,30,Otro,Santa Cruz,Santa Cruz
+733,Cliente_733,50,Femenino,Oruro,Oruro
+734,Cliente_734,51,Femenino,Potosí,Uyuni
+735,Cliente_735,58,Masculino,Potosí,Potosí
+736,Cliente_736,52,Otro,Potosí,Uyuni
+737,Cliente_737,18,Otro,La Paz,El Alto
+738,Cliente_738,38,Femenino,Potosí,Potosí
+739,Cliente_739,23,Femenino,Cochabamba,Quillacollo
+740,Cliente_740,45,Femenino,Chuquisaca,Sucre
+741,Cliente_741,34,Otro,Potosí,Uyuni
+742,Cliente_742,22,Masculino,Beni,Trinidad
+743,Cliente_743,48,Femenino,La Paz,El Alto
+744,Cliente_744,22,Otro,Potosí,Potosí
+745,Cliente_745,55,Otro,Santa Cruz,Santa Cruz
+746,Cliente_746,20,Masculino,Oruro,Oruro
+747,Cliente_747,40,Femenino,Santa Cruz,Santa Cruz
+748,Cliente_748,54,Otro,Potosí,Potosí
+749,Cliente_749,54,Femenino,Beni,Trinidad
+750,Cliente_750,27,Masculino,Potosí,Potosí
+751,Cliente_751,27,Masculino,Potosí,Uyuni
+752,Cliente_752,36,Masculino,Tarija,Yacuiba
+753,Cliente_753,34,Masculino,Chuquisaca,Sucre
+754,Cliente_754,38,Otro,Oruro,Oruro
+755,Cliente_755,31,Otro,Pando,Cobija
+756,Cliente_756,26,Femenino,Potosí,Uyuni
+757,Cliente_757,63,Femenino,Pando,Cobija
+758,Cliente_758,18,Masculino,Tarija,Tarija
+759,Cliente_759,62,Femenino,Tarija,Yacuiba
+760,Cliente_760,30,Otro,La Paz,El Alto
+761,Cliente_761,21,Masculino,Tarija,Yacuiba
+762,Cliente_762,18,Femenino,Beni,Trinidad
+763,Cliente_763,57,Otro,Potosí,Uyuni
+764,Cliente_764,49,Masculino,Pando,Cobija
+765,Cliente_765,51,Masculino,Pando,Cobija
+766,Cliente_766,45,Otro,Oruro,Oruro
+767,Cliente_767,48,Masculino,Potosí,Potosí
+768,Cliente_768,25,Otro,La Paz,La Paz
+769,Cliente_769,56,Masculino,Chuquisaca,Sucre
+770,Cliente_770,43,Otro,Beni,Trinidad
+771,Cliente_771,51,Masculino,La Paz,El Alto
+772,Cliente_772,20,Masculino,Potosí,Uyuni
+773,Cliente_773,29,Femenino,Oruro,Oruro
+774,Cliente_774,18,Masculino,Beni,Trinidad
+775,Cliente_775,61,Masculino,Pando,Cobija
+776,Cliente_776,22,Otro,Tarija,Tarija
+777,Cliente_777,47,Otro,Chuquisaca,Sucre
+778,Cliente_778,47,Femenino,Tarija,Yacuiba
+779,Cliente_779,34,Masculino,Beni,Trinidad
+780,Cliente_780,64,Otro,Pando,Cobija
+781,Cliente_781,40,Femenino,Oruro,Oruro
+782,Cliente_782,32,Masculino,Chuquisaca,Sucre
+783,Cliente_783,54,Otro,Beni,Trinidad
+784,Cliente_784,38,Otro,Tarija,Yacuiba
+785,Cliente_785,31,Otro,Potosí,Uyuni
+786,Cliente_786,19,Otro,Cochabamba,Quillacollo
+787,Cliente_787,28,Femenino,Pando,Cobija
+788,Cliente_788,56,Masculino,Cochabamba,Cochabamba
+789,Cliente_789,55,Masculino,Chuquisaca,Sucre
+790,Cliente_790,51,Femenino,Oruro,Oruro
+791,Cliente_791,55,Femenino,Chuquisaca,Sucre
+792,Cliente_792,51,Masculino,La Paz,El Alto
+793,Cliente_793,35,Femenino,Santa Cruz,Santa Cruz
+794,Cliente_794,47,Masculino,Pando,Cobija
+795,Cliente_795,32,Femenino,Oruro,Oruro
+796,Cliente_796,44,Femenino,Chuquisaca,Sucre
+797,Cliente_797,51,Femenino,Beni,Trinidad
+798,Cliente_798,55,Masculino,Pando,Cobija
+799,Cliente_799,50,Masculino,Santa Cruz,Montero
+800,Cliente_800,41,Masculino,Beni,Trinidad
+801,Cliente_801,32,Femenino,Pando,Cobija
+802,Cliente_802,47,Masculino,Pando,Cobija
+803,Cliente_803,59,Femenino,La Paz,La Paz
+804,Cliente_804,34,Femenino,La Paz,El Alto
+805,Cliente_805,22,Otro,Beni,Trinidad
+806,Cliente_806,46,Otro,Tarija,Tarija
+807,Cliente_807,21,Masculino,Tarija,Yacuiba
+808,Cliente_808,27,Femenino,Pando,Cobija
+809,Cliente_809,34,Femenino,Santa Cruz,Montero
+810,Cliente_810,27,Masculino,Chuquisaca,Sucre
+811,Cliente_811,34,Femenino,Chuquisaca,Sucre
+812,Cliente_812,37,Femenino,Potosí,Potosí
+813,Cliente_813,41,Masculino,Santa Cruz,Santa Cruz
+814,Cliente_814,22,Masculino,Beni,Trinidad
+815,Cliente_815,51,Femenino,La Paz,La Paz
+816,Cliente_816,23,Masculino,Beni,Trinidad
+817,Cliente_817,19,Masculino,Potosí,Potosí
+818,Cliente_818,30,Femenino,Oruro,Oruro
+819,Cliente_819,60,Masculino,Tarija,Tarija
+820,Cliente_820,60,Otro,La Paz,La Paz
+821,Cliente_821,28,Otro,Beni,Trinidad
+822,Cliente_822,64,Otro,La Paz,La Paz
+823,Cliente_823,40,Otro,Tarija,Tarija
+824,Cliente_824,33,Masculino,Pando,Cobija
+825,Cliente_825,48,Femenino,Santa Cruz,Montero
+826,Cliente_826,28,Masculino,Beni,Trinidad
+827,Cliente_827,33,Otro,Chuquisaca,Sucre
+828,Cliente_828,25,Masculino,Oruro,Oruro
+829,Cliente_829,21,Otro,Beni,Trinidad
+830,Cliente_830,57,Otro,Potosí,Uyuni
+831,Cliente_831,21,Femenino,Oruro,Oruro
+832,Cliente_832,42,Masculino,Cochabamba,Quillacollo
+833,Cliente_833,20,Femenino,La Paz,La Paz
+834,Cliente_834,49,Femenino,Pando,Cobija
+835,Cliente_835,20,Otro,Tarija,Yacuiba
+836,Cliente_836,44,Masculino,Potosí,Potosí
+837,Cliente_837,46,Masculino,Santa Cruz,Santa Cruz
+838,Cliente_838,49,Otro,Beni,Trinidad
+839,Cliente_839,36,Femenino,Oruro,Oruro
+840,Cliente_840,38,Otro,La Paz,La Paz
+841,Cliente_841,22,Masculino,Tarija,Tarija
+842,Cliente_842,35,Masculino,Cochabamba,Cochabamba
+843,Cliente_843,45,Femenino,Santa Cruz,Montero
+844,Cliente_844,59,Femenino,Santa Cruz,Santa Cruz
+845,Cliente_845,39,Masculino,Chuquisaca,Sucre
+846,Cliente_846,38,Masculino,Oruro,Oruro
+847,Cliente_847,23,Femenino,Beni,Trinidad
+848,Cliente_848,18,Masculino,Oruro,Oruro
+849,Cliente_849,22,Femenino,Tarija,Tarija
+850,Cliente_850,58,Masculino,La Paz,La Paz
+851,Cliente_851,29,Otro,La Paz,El Alto
+852,Cliente_852,43,Masculino,Oruro,Oruro
+853,Cliente_853,63,Otro,Potosí,Uyuni
+854,Cliente_854,51,Masculino,Cochabamba,Cochabamba
+855,Cliente_855,31,Femenino,La Paz,El Alto
+856,Cliente_856,43,Otro,Oruro,Oruro
+857,Cliente_857,62,Masculino,Pando,Cobija
+858,Cliente_858,44,Otro,Pando,Cobija
+859,Cliente_859,26,Masculino,Cochabamba,Quillacollo
+860,Cliente_860,43,Otro,Tarija,Yacuiba
+861,Cliente_861,64,Masculino,Potosí,Potosí
+862,Cliente_862,39,Otro,Santa Cruz,Montero
+863,Cliente_863,64,Masculino,La Paz,La Paz
+864,Cliente_864,47,Femenino,Potosí,Potosí
+865,Cliente_865,60,Masculino,Potosí,Potosí
+866,Cliente_866,34,Masculino,Tarija,Tarija
+867,Cliente_867,43,Femenino,La Paz,La Paz
+868,Cliente_868,53,Femenino,La Paz,La Paz
+869,Cliente_869,18,Otro,Oruro,Oruro
+870,Cliente_870,25,Masculino,Tarija,Tarija
+871,Cliente_871,52,Femenino,Santa Cruz,Montero
+872,Cliente_872,32,Masculino,Chuquisaca,Sucre
+873,Cliente_873,64,Masculino,Tarija,Yacuiba
+874,Cliente_874,39,Otro,Beni,Trinidad
+875,Cliente_875,31,Otro,La Paz,La Paz
+876,Cliente_876,43,Masculino,Oruro,Oruro
+877,Cliente_877,45,Masculino,La Paz,El Alto
+878,Cliente_878,40,Otro,Pando,Cobija
+879,Cliente_879,31,Otro,Potosí,Potosí
+880,Cliente_880,41,Femenino,Potosí,Uyuni
+881,Cliente_881,19,Otro,La Paz,El Alto
+882,Cliente_882,62,Masculino,Cochabamba,Quillacollo
+883,Cliente_883,43,Masculino,Cochabamba,Cochabamba
+884,Cliente_884,31,Masculino,Cochabamba,Quillacollo
+885,Cliente_885,24,Femenino,Oruro,Oruro
+886,Cliente_886,20,Femenino,Pando,Cobija
+887,Cliente_887,64,Femenino,La Paz,La Paz
+888,Cliente_888,40,Femenino,Chuquisaca,Sucre
+889,Cliente_889,63,Femenino,Pando,Cobija
+890,Cliente_890,60,Femenino,Potosí,Potosí
+891,Cliente_891,64,Masculino,Santa Cruz,Montero
+892,Cliente_892,62,Femenino,La Paz,El Alto
+893,Cliente_893,35,Femenino,Tarija,Tarija
+894,Cliente_894,55,Masculino,Tarija,Yacuiba
+895,Cliente_895,52,Otro,Chuquisaca,Sucre
+896,Cliente_896,32,Masculino,La Paz,La Paz
+897,Cliente_897,42,Masculino,Chuquisaca,Sucre
+898,Cliente_898,54,Masculino,Beni,Trinidad
+899,Cliente_899,45,Femenino,Tarija,Tarija
+900,Cliente_900,27,Otro,Cochabamba,Quillacollo
+901,Cliente_901,56,Masculino,Cochabamba,Quillacollo
+902,Cliente_902,34,Femenino,Pando,Cobija
+903,Cliente_903,56,Masculino,La Paz,La Paz
+904,Cliente_904,39,Otro,Santa Cruz,Montero
+905,Cliente_905,43,Masculino,Pando,Cobija
+906,Cliente_906,61,Otro,Potosí,Uyuni
+907,Cliente_907,42,Otro,Santa Cruz,Santa Cruz
+908,Cliente_908,34,Otro,Pando,Cobija
+909,Cliente_909,30,Femenino,Potosí,Potosí
+910,Cliente_910,37,Otro,Tarija,Yacuiba
+911,Cliente_911,42,Femenino,Pando,Cobija
+912,Cliente_912,21,Masculino,La Paz,La Paz
+913,Cliente_913,27,Femenino,Pando,Cobija
+914,Cliente_914,20,Femenino,Potosí,Potosí
+915,Cliente_915,58,Masculino,Cochabamba,Quillacollo
+916,Cliente_916,62,Masculino,La Paz,El Alto
+917,Cliente_917,35,Otro,Cochabamba,Cochabamba
+918,Cliente_918,64,Femenino,Beni,Trinidad
+919,Cliente_919,53,Otro,Oruro,Oruro
+920,Cliente_920,64,Masculino,Potosí,Uyuni
+921,Cliente_921,39,Femenino,Pando,Cobija
+922,Cliente_922,51,Masculino,Tarija,Tarija
+923,Cliente_923,64,Femenino,Pando,Cobija
+924,Cliente_924,25,Masculino,Pando,Cobija
+925,Cliente_925,57,Otro,Chuquisaca,Sucre
+926,Cliente_926,61,Otro,Oruro,Oruro
+927,Cliente_927,36,Masculino,La Paz,La Paz
+928,Cliente_928,59,Masculino,Potosí,Uyuni
+929,Cliente_929,58,Femenino,Cochabamba,Quillacollo
+930,Cliente_930,54,Otro,Pando,Cobija
+931,Cliente_931,23,Otro,Potosí,Uyuni
+932,Cliente_932,43,Otro,Pando,Cobija
+933,Cliente_933,51,Otro,Chuquisaca,Sucre
+934,Cliente_934,62,Femenino,La Paz,El Alto
+935,Cliente_935,23,Femenino,Pando,Cobija
+936,Cliente_936,54,Femenino,Beni,Trinidad
+937,Cliente_937,50,Femenino,Chuquisaca,Sucre
+938,Cliente_938,39,Femenino,Pando,Cobija
+939,Cliente_939,38,Masculino,Santa Cruz,Montero
+940,Cliente_940,23,Femenino,Oruro,Oruro
+941,Cliente_941,23,Masculino,La Paz,La Paz
+942,Cliente_942,21,Masculino,Chuquisaca,Sucre
+943,Cliente_943,47,Masculino,Chuquisaca,Sucre
+944,Cliente_944,28,Masculino,Beni,Trinidad
+945,Cliente_945,47,Otro,Beni,Trinidad
+946,Cliente_946,48,Femenino,Chuquisaca,Sucre
+947,Cliente_947,41,Otro,Oruro,Oruro
+948,Cliente_948,26,Masculino,Beni,Trinidad
+949,Cliente_949,20,Otro,Tarija,Tarija
+950,Cliente_950,48,Masculino,Tarija,Yacuiba
+951,Cliente_951,57,Otro,Tarija,Tarija
+952,Cliente_952,54,Masculino,Tarija,Yacuiba
+953,Cliente_953,53,Femenino,Tarija,Tarija
+954,Cliente_954,41,Masculino,Santa Cruz,Santa Cruz
+955,Cliente_955,48,Femenino,Beni,Trinidad
+956,Cliente_956,23,Femenino,Pando,Cobija
+957,Cliente_957,19,Femenino,Santa Cruz,Santa Cruz
+958,Cliente_958,37,Otro,Santa Cruz,Montero
+959,Cliente_959,45,Masculino,La Paz,La Paz
+960,Cliente_960,28,Otro,Santa Cruz,Santa Cruz
+961,Cliente_961,21,Femenino,Chuquisaca,Sucre
+962,Cliente_962,32,Femenino,Chuquisaca,Sucre
+963,Cliente_963,23,Otro,Oruro,Oruro
+964,Cliente_964,47,Otro,Potosí,Uyuni
+965,Cliente_965,55,Otro,Pando,Cobija
+966,Cliente_966,19,Otro,Potosí,Potosí
+967,Cliente_967,32,Otro,La Paz,La Paz
+968,Cliente_968,28,Otro,Pando,Cobija
+969,Cliente_969,25,Masculino,Oruro,Oruro
+970,Cliente_970,43,Femenino,Pando,Cobija
+971,Cliente_971,62,Femenino,Beni,Trinidad
+972,Cliente_972,61,Masculino,Chuquisaca,Sucre
+973,Cliente_973,22,Masculino,Tarija,Yacuiba
+974,Cliente_974,23,Masculino,Beni,Trinidad
+975,Cliente_975,43,Otro,Pando,Cobija
+976,Cliente_976,21,Femenino,Cochabamba,Cochabamba
+977,Cliente_977,36,Masculino,Santa Cruz,Santa Cruz
+978,Cliente_978,37,Masculino,La Paz,La Paz
+979,Cliente_979,50,Otro,Tarija,Yacuiba
+980,Cliente_980,37,Masculino,Cochabamba,Quillacollo
+981,Cliente_981,29,Femenino,Cochabamba,Quillacollo
+982,Cliente_982,64,Otro,Santa Cruz,Montero
+983,Cliente_983,18,Femenino,Cochabamba,Cochabamba
+984,Cliente_984,43,Femenino,Cochabamba,Quillacollo
+985,Cliente_985,31,Masculino,Santa Cruz,Montero
+986,Cliente_986,55,Masculino,Santa Cruz,Santa Cruz
+987,Cliente_987,54,Masculino,Beni,Trinidad
+988,Cliente_988,28,Femenino,Cochabamba,Quillacollo
+989,Cliente_989,53,Otro,Cochabamba,Quillacollo
+990,Cliente_990,30,Femenino,Cochabamba,Quillacollo
+991,Cliente_991,60,Masculino,Pando,Cobija
+992,Cliente_992,20,Femenino,Oruro,Oruro
+993,Cliente_993,50,Masculino,Potosí,Potosí
+994,Cliente_994,23,Masculino,Tarija,Yacuiba
+995,Cliente_995,27,Masculino,Beni,Trinidad
+996,Cliente_996,22,Masculino,Tarija,Tarija
+997,Cliente_997,40,Femenino,Oruro,Oruro
+998,Cliente_998,27,Otro,Pando,Cobija
+999,Cliente_999,61,Femenino,Cochabamba,Cochabamba
+1000,Cliente_1000,19,Femenino,La Paz,La Paz

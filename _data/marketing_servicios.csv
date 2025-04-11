@@ -1,0 +1,201 @@
+ID_Servicio,Nombre_Servicio,Categoría,Precio_Unitario
+1,Email Marketing,Creatividad,712.47
+2,Contenido,Desarrollo Web,1638.76
+3,Contenido,Análisis de Datos,583.82
+4,Publicidad,Desarrollo Web,1394.86
+5,Email Marketing,Desarrollo Web,1544.43
+6,Redes Sociales,Análisis de Datos,1231.71
+7,Publicidad,Creatividad,995.99
+8,Publicidad,Desarrollo Web,882.5
+9,Redes Sociales,Análisis de Datos,762.85
+10,Contenido,Análisis de Datos,1866.11
+11,Contenido,Creatividad,1678.18
+12,Redes Sociales,Desarrollo Web,1933.55
+13,SEO,Desarrollo Web,336.16
+14,Contenido,Desarrollo Web,1488.65
+15,SEO,Desarrollo Web,1882.85
+16,Redes Sociales,Creatividad,444.34
+17,Contenido,Consultoría,226.34
+18,Email Marketing,Desarrollo Web,1508.13
+19,SEO,Análisis de Datos,1191.5
+20,Redes Sociales,Consultoría,1699.47
+21,Redes Sociales,Creatividad,365.57
+22,SEO,Consultoría,1611.01
+23,Publicidad,Desarrollo Web,483.09
+24,Email Marketing,Creatividad,410.95
+25,SEO,Análisis de Datos,412.11
+26,Redes Sociales,Consultoría,1647.69
+27,Contenido,Consultoría,1363.87
+28,Redes Sociales,Creatividad,1093.82
+29,Redes Sociales,Creatividad,781.78
+30,Redes Sociales,Consultoría,1766.68
+31,Contenido,Desarrollo Web,845.65
+32,Publicidad,Análisis de Datos,1651.54
+33,Publicidad,Análisis de Datos,934.36
+34,Publicidad,Consultoría,816.19
+35,Publicidad,Desarrollo Web,979.09
+36,SEO,Consultoría,672.62
+37,Email Marketing,Consultoría,1520.46
+38,Contenido,Creatividad,1055.17
+39,Redes Sociales,Creatividad,541.2
+40,SEO,Análisis de Datos,1809.19
+41,Redes Sociales,Análisis de Datos,829.39
+42,Contenido,Desarrollo Web,1132.75
+43,Publicidad,Análisis de Datos,1822.3
+44,SEO,Creatividad,1286.05
+45,Email Marketing,Desarrollo Web,322.11
+46,Email Marketing,Consultoría,1885.68
+47,Contenido,Creatividad,1292.65
+48,SEO,Análisis de Datos,736.32
+49,Publicidad,Análisis de Datos,364.62
+50,SEO,Análisis de Datos,1608.65
+51,Email Marketing,Análisis de Datos,1278.14
+52,Contenido,Desarrollo Web,1113.58
+53,Email Marketing,Consultoría,1798.4
+54,Publicidad,Creatividad,1598.33
+55,SEO,Creatividad,388.18
+56,SEO,Desarrollo Web,692.27
+57,Publicidad,Creatividad,572.13
+58,Redes Sociales,Análisis de Datos,1513.5
+59,Email Marketing,Desarrollo Web,163.71
+60,Contenido,Consultoría,1182.79
+61,Publicidad,Desarrollo Web,1548.67
+62,Redes Sociales,Consultoría,1765.85
+63,SEO,Desarrollo Web,749.96
+64,Publicidad,Creatividad,1660.39
+65,SEO,Desarrollo Web,310.2
+66,Redes Sociales,Desarrollo Web,1708.26
+67,SEO,Análisis de Datos,342.23
+68,SEO,Consultoría,854.85
+69,SEO,Creatividad,1614.86
+70,Contenido,Creatividad,384.84
+71,Email Marketing,Desarrollo Web,535.58
+72,Publicidad,Análisis de Datos,1472.28
+73,Email Marketing,Desarrollo Web,1468.07
+74,Contenido,Análisis de Datos,1318.18
+75,SEO,Desarrollo Web,1418.5
+76,SEO,Consultoría,1131.18
+77,Publicidad,Creatividad,578.42
+78,Redes Sociales,Análisis de Datos,756.82
+79,Email Marketing,Consultoría,445.04
+80,Contenido,Consultoría,1826.06
+81,Redes Sociales,Desarrollo Web,1208.44
+82,Publicidad,Desarrollo Web,861.62
+83,Publicidad,Desarrollo Web,977.81
+84,Publicidad,Desarrollo Web,1899.84
+85,Email Marketing,Desarrollo Web,391.37
+86,SEO,Creatividad,1213.84
+87,Publicidad,Análisis de Datos,1061.19
+88,Redes Sociales,Análisis de Datos,1261.76
+89,Email Marketing,Creatividad,134.41
+90,Publicidad,Desarrollo Web,1757.04
+91,Publicidad,Desarrollo Web,1871.02
+92,Redes Sociales,Desarrollo Web,1173.75
+93,Redes Sociales,Desarrollo Web,1423.64
+94,Email Marketing,Creatividad,1852.75
+95,SEO,Desarrollo Web,1443.75
+96,Redes Sociales,Creatividad,389.82
+97,Contenido,Desarrollo Web,1194.95
+98,Email Marketing,Desarrollo Web,1252.76
+99,SEO,Consultoría,905.85
+100,Publicidad,Creatividad,1499.24
+101,Publicidad,Consultoría,1875.3
+102,Redes Sociales,Desarrollo Web,1858.58
+103,Contenido,Consultoría,956.59
+104,Email Marketing,Análisis de Datos,315.15
+105,SEO,Análisis de Datos,1971.2
+106,Publicidad,Desarrollo Web,1693.91
+107,Redes Sociales,Desarrollo Web,336.86
+108,Publicidad,Análisis de Datos,1849.6
+109,Email Marketing,Desarrollo Web,1752.8
+110,Redes Sociales,Creatividad,1085.79
+111,Email Marketing,Creatividad,1223.42
+112,SEO,Consultoría,858.11
+113,Contenido,Creatividad,204.05
+114,SEO,Consultoría,736.87
+115,Email Marketing,Desarrollo Web,1625.42
+116,Email Marketing,Creatividad,108.8
+117,Redes Sociales,Consultoría,733.65
+118,Publicidad,Desarrollo Web,856.52
+119,SEO,Consultoría,1121.05
+120,Contenido,Consultoría,1847.73
+121,SEO,Creatividad,758.06
+122,Publicidad,Análisis de Datos,759.21
+123,SEO,Análisis de Datos,1501.25
+124,Email Marketing,Desarrollo Web,959.21
+125,Redes Sociales,Desarrollo Web,526.75
+126,SEO,Análisis de Datos,959.64
+127,Email Marketing,Desarrollo Web,367.63
+128,Contenido,Creatividad,435.14
+129,Redes Sociales,Creatividad,1046.9
+130,Publicidad,Análisis de Datos,895.96
+131,SEO,Análisis de Datos,1838.21
+132,Contenido,Creatividad,788.55
+133,Redes Sociales,Desarrollo Web,1203.12
+134,Publicidad,Creatividad,1301.3
+135,SEO,Desarrollo Web,124.88
+136,Contenido,Análisis de Datos,1360.72
+137,Contenido,Análisis de Datos,438.27
+138,SEO,Consultoría,1926.03
+139,Publicidad,Creatividad,382.46
+140,Contenido,Análisis de Datos,887.79
+141,SEO,Consultoría,262.16
+142,Email Marketing,Desarrollo Web,1994.06
+143,Redes Sociales,Creatividad,1054.17
+144,Publicidad,Creatividad,1231.23
+145,SEO,Análisis de Datos,227.45
+146,Email Marketing,Análisis de Datos,1524.92
+147,Contenido,Desarrollo Web,498.82
+148,Contenido,Creatividad,1806.3
+149,Redes Sociales,Análisis de Datos,489.77
+150,Publicidad,Desarrollo Web,462.31
+151,Email Marketing,Desarrollo Web,169.44
+152,Email Marketing,Desarrollo Web,996.93
+153,SEO,Desarrollo Web,1173.2
+154,SEO,Desarrollo Web,224.85
+155,Contenido,Consultoría,1573.5
+156,SEO,Desarrollo Web,961.25
+157,SEO,Desarrollo Web,1096.34
+158,Email Marketing,Creatividad,937.45
+159,Contenido,Análisis de Datos,861.45
+160,Contenido,Consultoría,1163.32
+161,SEO,Desarrollo Web,394.96
+162,Contenido,Creatividad,445.66
+163,SEO,Análisis de Datos,1737.39
+164,SEO,Creatividad,1897.62
+165,Contenido,Creatividad,809.29
+166,Redes Sociales,Consultoría,614.41
+167,SEO,Consultoría,1323.6
+168,Contenido,Creatividad,876.59
+169,Contenido,Creatividad,148.23
+170,SEO,Análisis de Datos,396.69
+171,Contenido,Análisis de Datos,1460.35
+172,SEO,Consultoría,1351.96
+173,Email Marketing,Desarrollo Web,151.48
+174,SEO,Creatividad,521.75
+175,SEO,Análisis de Datos,539.04
+176,Contenido,Análisis de Datos,1376.6
+177,Contenido,Desarrollo Web,137.45
+178,Contenido,Análisis de Datos,297.81
+179,Contenido,Consultoría,1619.84
+180,Contenido,Creatividad,439.23
+181,Email Marketing,Análisis de Datos,1340.22
+182,Email Marketing,Desarrollo Web,552.55
+183,Email Marketing,Consultoría,288.94
+184,Redes Sociales,Creatividad,562.03
+185,SEO,Consultoría,1472.31
+186,SEO,Análisis de Datos,1725.82
+187,Email Marketing,Desarrollo Web,1677.42
+188,Email Marketing,Consultoría,854.65
+189,Publicidad,Desarrollo Web,1369.36
+190,SEO,Desarrollo Web,489.47
+191,Contenido,Desarrollo Web,656.98
+192,Contenido,Creatividad,1803.04
+193,SEO,Consultoría,124.7
+194,Email Marketing,Desarrollo Web,262.47
+195,Redes Sociales,Análisis de Datos,494.98
+196,Publicidad,Consultoría,150.41
+197,Email Marketing,Consultoría,444.73
+198,Publicidad,Consultoría,1207.78
+199,SEO,Consultoría,900.71
+200,Email Marketing,Consultoría,1796.08

@@ -1,0 +1,301 @@
+ID_Campaña,Nombre_Campaña,Departamento
+1,Campaña_1,La Paz
+2,Campaña_2,Pando
+3,Campaña_3,Oruro
+4,Campaña_4,Tarija
+5,Campaña_5,Pando
+6,Campaña_6,La Paz
+7,Campaña_7,La Paz
+8,Campaña_8,Santa Cruz
+9,Campaña_9,Cochabamba
+10,Campaña_10,La Paz
+11,Campaña_11,Pando
+12,Campaña_12,Cochabamba
+13,Campaña_13,Oruro
+14,Campaña_14,Tarija
+15,Campaña_15,Oruro
+16,Campaña_16,La Paz
+17,Campaña_17,La Paz
+18,Campaña_18,Beni
+19,Campaña_19,Santa Cruz
+20,Campaña_20,Cochabamba
+21,Campaña_21,Santa Cruz
+22,Campaña_22,La Paz
+23,Campaña_23,Chuquisaca
+24,Campaña_24,Chuquisaca
+25,Campaña_25,Pando
+26,Campaña_26,Chuquisaca
+27,Campaña_27,Cochabamba
+28,Campaña_28,Beni
+29,Campaña_29,Santa Cruz
+30,Campaña_30,Beni
+31,Campaña_31,Pando
+32,Campaña_32,Cochabamba
+33,Campaña_33,Beni
+34,Campaña_34,Beni
+35,Campaña_35,Tarija
+36,Campaña_36,Chuquisaca
+37,Campaña_37,La Paz
+38,Campaña_38,Beni
+39,Campaña_39,Beni
+40,Campaña_40,Chuquisaca
+41,Campaña_41,Chuquisaca
+42,Campaña_42,Oruro
+43,Campaña_43,Chuquisaca
+44,Campaña_44,La Paz
+45,Campaña_45,Oruro
+46,Campaña_46,Beni
+47,Campaña_47,Tarija
+48,Campaña_48,Santa Cruz
+49,Campaña_49,La Paz
+50,Campaña_50,Chuquisaca
+51,Campaña_51,Pando
+52,Campaña_52,Santa Cruz
+53,Campaña_53,Beni
+54,Campaña_54,La Paz
+55,Campaña_55,La Paz
+56,Campaña_56,Beni
+57,Campaña_57,Tarija
+58,Campaña_58,Tarija
+59,Campaña_59,Tarija
+60,Campaña_60,Tarija
+61,Campaña_61,Potosí
+62,Campaña_62,Santa Cruz
+63,Campaña_63,Beni
+64,Campaña_64,Cochabamba
+65,Campaña_65,La Paz
+66,Campaña_66,Oruro
+67,Campaña_67,Oruro
+68,Campaña_68,Chuquisaca
+69,Campaña_69,Oruro
+70,Campaña_70,Potosí
+71,Campaña_71,Tarija
+72,Campaña_72,Chuquisaca
+73,Campaña_73,La Paz
+74,Campaña_74,Oruro
+75,Campaña_75,Potosí
+76,Campaña_76,Potosí
+77,Campaña_77,Potosí
+78,Campaña_78,Cochabamba
+79,Campaña_79,La Paz
+80,Campaña_80,La Paz
+81,Campaña_81,Pando
+82,Campaña_82,La Paz
+83,Campaña_83,Potosí
+84,Campaña_84,Santa Cruz
+85,Campaña_85,Chuquisaca
+86,Campaña_86,Potosí
+87,Campaña_87,La Paz
+88,Campaña_88,Oruro
+89,Campaña_89,Beni
+90,Campaña_90,Cochabamba
+91,Campaña_91,Chuquisaca
+92,Campaña_92,Potosí
+93,Campaña_93,Cochabamba
+94,Campaña_94,Potosí
+95,Campaña_95,Cochabamba
+96,Campaña_96,Oruro
+97,Campaña_97,Beni
+98,Campaña_98,Tarija
+99,Campaña_99,Chuquisaca
+100,Campaña_100,Pando
+101,Campaña_101,Tarija
+102,Campaña_102,Potosí
+103,Campaña_103,Chuquisaca
+104,Campaña_104,Oruro
+105,Campaña_105,Pando
+106,Campaña_106,Oruro
+107,Campaña_107,Potosí
+108,Campaña_108,Beni
+109,Campaña_109,Beni
+110,Campaña_110,Tarija
+111,Campaña_111,Chuquisaca
+112,Campaña_112,Potosí
+113,Campaña_113,Beni
+114,Campaña_114,Oruro
+115,Campaña_115,Beni
+116,Campaña_116,Potosí
+117,Campaña_117,Pando
+118,Campaña_118,Cochabamba
+119,Campaña_119,Pando
+120,Campaña_120,Oruro
+121,Campaña_121,Beni
+122,Campaña_122,Pando
+123,Campaña_123,Santa Cruz
+124,Campaña_124,Beni
+125,Campaña_125,Cochabamba
+126,Campaña_126,Potosí
+127,Campaña_127,Chuquisaca
+128,Campaña_128,Oruro
+129,Campaña_129,Potosí
+130,Campaña_130,Potosí
+131,Campaña_131,Potosí
+132,Campaña_132,Santa Cruz
+133,Campaña_133,Santa Cruz
+134,Campaña_134,Oruro
+135,Campaña_135,Santa Cruz
+136,Campaña_136,Cochabamba
+137,Campaña_137,Beni
+138,Campaña_138,Beni
+139,Campaña_139,Oruro
+140,Campaña_140,Pando
+141,Campaña_141,Pando
+142,Campaña_142,Chuquisaca
+143,Campaña_143,Pando
+144,Campaña_144,Tarija
+145,Campaña_145,Pando
+146,Campaña_146,Cochabamba
+147,Campaña_147,Beni
+148,Campaña_148,Cochabamba
+149,Campaña_149,Tarija
+150,Campaña_150,Tarija
+151,Campaña_151,Cochabamba
+152,Campaña_152,Santa Cruz
+153,Campaña_153,Beni
+154,Campaña_154,Cochabamba
+155,Campaña_155,Tarija
+156,Campaña_156,Potosí
+157,Campaña_157,Chuquisaca
+158,Campaña_158,Beni
+159,Campaña_159,Pando
+160,Campaña_160,Chuquisaca
+161,Campaña_161,Beni
+162,Campaña_162,Santa Cruz
+163,Campaña_163,La Paz
+164,Campaña_164,Tarija
+165,Campaña_165,Beni
+166,Campaña_166,Beni
+167,Campaña_167,Cochabamba
+168,Campaña_168,Chuquisaca
+169,Campaña_169,Cochabamba
+170,Campaña_170,Cochabamba
+171,Campaña_171,Pando
+172,Campaña_172,Santa Cruz
+173,Campaña_173,Potosí
+174,Campaña_174,Pando
+175,Campaña_175,Cochabamba
+176,Campaña_176,La Paz
+177,Campaña_177,La Paz
+178,Campaña_178,Santa Cruz
+179,Campaña_179,La Paz
+180,Campaña_180,Pando
+181,Campaña_181,Chuquisaca
+182,Campaña_182,Chuquisaca
+183,Campaña_183,Pando
+184,Campaña_184,Chuquisaca
+185,Campaña_185,Chuquisaca
+186,Campaña_186,Chuquisaca
+187,Campaña_187,Tarija
+188,Campaña_188,Cochabamba
+189,Campaña_189,La Paz
+190,Campaña_190,Santa Cruz
+191,Campaña_191,Oruro
+192,Campaña_192,Potosí
+193,Campaña_193,Oruro
+194,Campaña_194,Beni
+195,Campaña_195,Chuquisaca
+196,Campaña_196,Pando
+197,Campaña_197,Santa Cruz
+198,Campaña_198,Pando
+199,Campaña_199,Chuquisaca
+200,Campaña_200,Tarija
+201,Campaña_201,Potosí
+202,Campaña_202,Potosí
+203,Campaña_203,Oruro
+204,Campaña_204,Tarija
+205,Campaña_205,Pando
+206,Campaña_206,Potosí
+207,Campaña_207,Oruro
+208,Campaña_208,Santa Cruz
+209,Campaña_209,La Paz
+210,Campaña_210,Tarija
+211,Campaña_211,Beni
+212,Campaña_212,Oruro
+213,Campaña_213,Chuquisaca
+214,Campaña_214,La Paz
+215,Campaña_215,Chuquisaca
+216,Campaña_216,Beni
+217,Campaña_217,Cochabamba
+218,Campaña_218,Tarija
+219,Campaña_219,Cochabamba
+220,Campaña_220,La Paz
+221,Campaña_221,Beni
+222,Campaña_222,Beni
+223,Campaña_223,Oruro
+224,Campaña_224,Cochabamba
+225,Campaña_225,Santa Cruz
+226,Campaña_226,Oruro
+227,Campaña_227,Beni
+228,Campaña_228,Cochabamba
+229,Campaña_229,Chuquisaca
+230,Campaña_230,Santa Cruz
+231,Campaña_231,Potosí
+232,Campaña_232,La Paz
+233,Campaña_233,Tarija
+234,Campaña_234,Potosí
+235,Campaña_235,La Paz
+236,Campaña_236,Santa Cruz
+237,Campaña_237,Oruro
+238,Campaña_238,Chuquisaca
+239,Campaña_239,Santa Cruz
+240,Campaña_240,Pando
+241,Campaña_241,Beni
+242,Campaña_242,Tarija
+243,Campaña_243,Chuquisaca
+244,Campaña_244,Santa Cruz
+245,Campaña_245,Oruro
+246,Campaña_246,Santa Cruz
+247,Campaña_247,Pando
+248,Campaña_248,Santa Cruz
+249,Campaña_249,Cochabamba
+250,Campaña_250,Potosí
+251,Campaña_251,La Paz
+252,Campaña_252,La Paz
+253,Campaña_253,La Paz
+254,Campaña_254,La Paz
+255,Campaña_255,Santa Cruz
+256,Campaña_256,Santa Cruz
+257,Campaña_257,Oruro
+258,Campaña_258,Pando
+259,Campaña_259,Chuquisaca
+260,Campaña_260,Tarija
+261,Campaña_261,Tarija
+262,Campaña_262,Santa Cruz
+263,Campaña_263,Oruro
+264,Campaña_264,Tarija
+265,Campaña_265,Chuquisaca
+266,Campaña_266,Beni
+267,Campaña_267,Pando
+268,Campaña_268,La Paz
+269,Campaña_269,Chuquisaca
+270,Campaña_270,La Paz
+271,Campaña_271,Oruro
+272,Campaña_272,La Paz
+273,Campaña_273,Chuquisaca
+274,Campaña_274,Tarija
+275,Campaña_275,Chuquisaca
+276,Campaña_276,Oruro
+277,Campaña_277,Oruro
+278,Campaña_278,Chuquisaca
+279,Campaña_279,La Paz
+280,Campaña_280,Oruro
+281,Campaña_281,Cochabamba
+282,Campaña_282,Beni
+283,Campaña_283,Beni
+284,Campaña_284,Cochabamba
+285,Campaña_285,Chuquisaca
+286,Campaña_286,Pando
+287,Campaña_287,Oruro
+288,Campaña_288,Cochabamba
+289,Campaña_289,Beni
+290,Campaña_290,Cochabamba
+291,Campaña_291,Pando
+292,Campaña_292,Tarija
+293,Campaña_293,Beni
+294,Campaña_294,Tarija
+295,Campaña_295,Tarija
+296,Campaña_296,Oruro
+297,Campaña_297,Potosí
+298,Campaña_298,Beni
+299,Campaña_299,Chuquisaca
+300,Campaña_300,Potosí

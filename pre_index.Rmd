@@ -41,20 +41,24 @@ df_campanias = read.csv("_data/marketing_campañas.csv", sep = ",")
 df_clientes = read.csv("_data/marketing_clientes.csv", sep = ",")
 df_servicios = read.csv("_data/marketing_servicios.csv", sep = ",")
 df_transacciones = read.csv("_data/marketing_transacciones.csv", sep = ",")
-# ponemos los nombres de columnas en minusculas 
+# ponemos los nombres de columnas en minusculas
 names(df_clientes) <- tolower(names(df_clientes))
 names(df_servicios) <- tolower(names(df_servicios))
 names(df_campanias) <- tolower(names(df_campanias))
 names(df_transacciones) <- tolower(names(df_transacciones))
 ```
 
-## 🔍 Revisamos datos 
+## 🔍 Revisamos datos
 ```{r}
 # Revisar tipos
 str(df_transacciones)
 
 # Convertir fechas
 df_transacciones$fecha <- as.Date(df_transacciones$fecha)
+
+# renombramos campo departamento de campaña
+df_campanias <- df_campanias %>%
+  rename(departamento_campaña = departamento)
 ```
 ## 🔗 Unir datos completos
 ```{r unir datos}
@@ -72,6 +76,16 @@ head(df_datos_completos)
 
 load("_data/datos_completos.RData")
 
+```
+
+```{r}
+df_datos_completos %>%
+  group_by(categoría) %>%
+  summarise(ventas_totales = sum(total, na.rm = TRUE)) %>%
+  hchart("column", hcaes(x = categoría, y = ventas_totales)) %>%
+  hc_title(text = "Ventas por Categoría de Servicio") %>%
+  hc_xAxis(title = list(text = "Categoría")) %>%
+  hc_yAxis(title = list(text = "Total en Bs"))
 ```
 
 

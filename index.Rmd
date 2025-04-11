@@ -16,11 +16,14 @@ output:
 
 ```{r setup, include=FALSE}
 if (!require("DT")) install.packages("DT")
+library(tidyverse)
+library(dplyr)
 library(flexdashboard)
 library(DT)
+library(highcharter)
 load("_data/datos_completos.RData")
 ```
-⚙️ Parte 1: Preparación de los datos
+⚙️ 1: Preparación de los datos
 =======================================================================
 Procesamos los CSV en otro archivo y aqui solo leemos los dataframe
 
@@ -70,5 +73,118 @@ str(df_datos_completos)
 ```{r}
 summary(df_datos_completos)
 ```
+📊 2: Visualizaciones interactivas
+=======================================================================
+Row
+-----------------------------------------------------------------------
+### ✅ 1. Ventas por Categoría de Servicio
+
+```{r}
+df_datos_completos %>%
+  group_by(categoría) %>%
+  summarise(ventas_totales = sum(total, na.rm = TRUE)) %>%
+  hchart("column", hcaes(x = categoría, y = ventas_totales)) %>%
+  hc_title(text = "Ventas por Categoría de Servicio") %>%
+  hc_xAxis(title = list(text = "Categoría")) %>%
+  hc_yAxis(title = list(text = "Total en Bs"))
+```
+### 📊 2. Distribución de Clientes por Edad
+```{r}
+hchart(
+  hist(df_datos_completos$edad, breaks = seq(0, 100, by = 5), plot = FALSE),
+  color = "#3182bd"
+) %>%
+  hc_title(text = "Distribución de Edad de Clientes") %>%
+  hc_xAxis(title = list(text = "Edad")) %>%
+  hc_yAxis(title = list(text = "Frecuencia"))
+
+```
+Row
+-----------------------------------------------------------------------
+### 📍 3. Ventas por Departamento
+```{r}
+df_datos_completos %>%
+  group_by(departamento) %>%
+  summarise(ventas_totales = sum(total, na.rm = TRUE)) %>%
+  hchart("bar", hcaes(x = departamento, y = ventas_totales)) %>%
+  hc_title(text = "Ventas por Departamento") %>%
+  hc_xAxis(title = list(text = "Departamento")) %>%
+  hc_yAxis(title = list(text = "Total en Bs"))
+
+```
+
+### 🚻 4. Ventas por Género
+```{r}
+df_datos_completos %>%
+  group_by(genero) %>%
+  summarise(ventas_totales = sum(total, na.rm = TRUE)) %>%
+  hchart("pie", hcaes(x = genero, y = ventas_totales), 
+         color = c("#1f77b4", "#ff7f0e", "#2ca02c")) %>%
+  hc_title(text = "Ventas por Género") %>%
+  hc_tooltip(pointFormat = "{series.name}: <b>{point.percentage:.1f}%</b>")
+```
+Row
+-----------------------------------------------------------------------
+### 🌆 5. Participación por Ciudad
+```{r}
+df_datos_completos %>%
+  count(ciudad, name = "total_clientes") %>%
+  hchart("bar", hcaes(x = ciudad, y = total_clientes)) %>%
+  hc_title(text = "Participación por Ciudad") %>%
+  hc_xAxis(title = list(text = "Ciudad")) %>%
+  hc_yAxis(title = list(text = "Cantidad de Clientes"))
+```
+
+### 📈 6. Tendencias de Ventas por Fecha
+
+```{r}
+df_datos_completos %>%
+  mutate(fecha = ymd(fecha)) %>%
+  group_by(fecha) %>%
+  summarise(ventas_totales = sum(total)) %>%
+  hchart("line", hcaes(x = fecha, y = ventas_totales)) %>%
+  hc_title(text = "Tendencia de Ventas por Fecha") %>%
+  hc_xAxis(type = "datetime", title = list(text = "Fecha")) %>%
+  hc_yAxis(title = list(text = "Total en Bs"))
+
+```
+Row
+-----------------------------------------------------------------------
+### 📊 7. Histograma de Frecuencia de Ventas
+
+```{r}
+hchart(
+  hist(df_datos_completos$total, plot = FALSE),
+  color = "#a1d99b"
+) %>%
+  hc_title(text = "Histograma de Frecuencia de Ventas") %>%
+  hc_xAxis(title = list(text = "Monto Total (Bs)")) %>%
+  hc_yAxis(title = list(text = "Frecuencia"))
+
+```
+
+### 🟠 8. Dispersión entre Edad y Monto de Venta
+
+```{r}
+hchart(df_datos_completos, "scatter", hcaes(x = edad, y = total)) %>%
+  hc_title(text = "Dispersión entre Edad y Monto de Venta") %>%
+  hc_xAxis(title = list(text = "Edad del Cliente")) %>%
+  hc_yAxis(title = list(text = "Monto de la Transacción (Bs)"))
+```
 
 
+🧭️ 3: Visualización geoespacial con rutas
+=======================================================================
+📈 4: KPIs
+=======================================================================
+🎓 5: Créditos
+=======================================================================
+
+**📄 Informe de Visualización de Datos**
+
+- 👨‍🎓 **Nombre del Estudiante:** Gaston Nina Sossa  
+- 🧑‍💻 **Carrera:** Ingeniería de Sistemas  
+- 📊 **Módulo:** Visualización de Datos  
+- 🎓 **Universidad:** Universidad Mayor de San Andrés  
+- 👨‍🏫 **Docente:** David ..  
+- 📅 **Gestión:** 2024 - Segundo Semestre

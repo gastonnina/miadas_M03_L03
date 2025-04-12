@@ -15,6 +15,7 @@ output:
 ---
 
 ```{r setup, include=FALSE}
+if (!require("flexdashboard")) install.packages("flexdashboard")
 if (!require("DT")) install.packages("DT")
 library(tidyverse)
 library(dplyr)
@@ -75,8 +76,10 @@ summary(df_datos_completos)
 ```
 📊 2: Visualizaciones interactivas
 =======================================================================
-Row {.tabset}
+
+Column {.tabset}
 -----------------------------------------------------------------------
+
 ### ✅ 1. Ventas por Categoría de Servicio
 
 ```{r}
@@ -169,12 +172,76 @@ hchart(df_datos_completos, "scatter", hcaes(x = edad, y = total)) %>%
   hc_xAxis(title = list(text = "Edad del Cliente")) %>%
   hc_yAxis(title = list(text = "Monto de la Transacción (Bs)"))
 ```
-</div>
 
 🧭️ 3: Visualización geoespacial con rutas
 =======================================================================
-📈 4: KPIs
+
+Row
+-----------------------------------------------------------------------
+### Chart 1
+```{r}
+str(df_campanias)
+```
+
+📈 4: KPIs {data-orientation=rows}
 =======================================================================
+
+Row
+-----------------------------------------------------------------------
+```{r setup1, include=FALSE}
+
+# Total de ingresos generados
+total_ingresos <- sum(df_datos_completos$total, na.rm = TRUE)
+
+# Total de clientes únicos
+total_clientes <- n_distinct(df_datos_completos$id_cliente)
+
+# Total de transacciones
+total_transacciones <- nrow(df_datos_completos)
+
+# Servicio más solicitado
+servicio_top <- df_datos_completos %>%
+  count(nombre_servicio, sort = TRUE) %>%
+  slice(1) %>%
+  pull(nombre_servicio)
+
+# Departamento con más ventas
+departamento_top <- df_datos_completos %>%
+  group_by(departamento) %>%
+  summarise(ventas = sum(total, na.rm = TRUE)) %>%
+  arrange(desc(ventas)) %>%
+  slice(1) %>%
+  pull(departamento)
+
+```
+
+### Total de ingresos
+```{r}
+valueBox(formatC(total_ingresos, format = "f", big.mark = ",", digits = 2), "Total de ingresos", icon = "fa-dollar-sign")
+```
+
+### Clientes únicos
+```{r}
+valueBox(total_clientes, "Clientes únicos", icon = "fa-users")
+```
+
+Row
+-----------------------------------------------------------------------
+### Transacciones
+```{r}
+valueBox(total_transacciones, "Transacciones", icon = "fa-exchange-alt")
+```
+
+### Servicio más solicitado
+```{r}
+valueBox(servicio_top, "Servicio más solicitado", icon = "fa-cogs")
+```
+### Departamento líder
+```{r}
+valueBox(departamento_top, "Departamento líder", icon = "fa-map-marked-alt")
+```
+
+
 🎓 5: Créditos
 =======================================================================
 

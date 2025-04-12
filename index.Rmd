@@ -17,11 +17,13 @@ output:
 ```{r setup, include=FALSE}
 if (!require("flexdashboard")) install.packages("flexdashboard")
 if (!require("DT")) install.packages("DT")
+if (!require("leaflet")) install.packages("leaflet")
 library(tidyverse)
 library(dplyr)
 library(flexdashboard)
 library(DT)
 library(highcharter)
+library(leaflet)
 load("_data/datos_completos.RData")
 ```
 ⚙️ 1: Preparación de los datos
@@ -178,9 +180,45 @@ hchart(df_datos_completos, "scatter", hcaes(x = edad, y = total)) %>%
 
 Row
 -----------------------------------------------------------------------
-### Chart 1
+```{r setup1, include=FALSE}
+#  Resumen por departamento
+resumen_dpto <- df_datos_completos %>%
+  group_by(departamento) %>%
+  summarise(
+    total_ventas = sum(total, na.rm = TRUE),
+    transacciones = n(),
+    clientes_unicos = n_distinct(id_cliente),
+    .groups = "drop"
+  )
+
+# ️ Unir con geojson
+mapa_datos <- geo_departamentos %>%
+  left_join(resumen_dpto, by = c("name" = "departamento"))
+
+#  Paleta y descripción emergente
+paleta <- colorNumeric("YlGnBu", domain = mapa_datos$total_ventas)
+popup_contenido <- paste0(
+  "<strong>", mapa_datos$name, "</strong><br/>",
+  "🛒 Ventas: <b>", round(mapa_datos$total_ventas, 2), "</b><br/>",
+  "🔁 Transacciones: <b>", mapa_datos$transacciones, "</b><br/>",
+  "👥 Clientes: <b>", mapa_datos$clientes_unicos, "</b>"
+)
+```
+
+### GeoJSON
 ```{r}
-str(df_campanias)
+renderLeaflet({
+    leaflet(mapa_datos) %>%
+      addProviderTiles(providers$CartoDB.Positron) %>%
+      addPolygons(
+        fillColor = ~paleta(Total_Ventas),
+        fillOpacity = 0.8,
+        color = "white", weight = 1,
+        popup = popup_contenido
+      ) %>%
+      addLegend("bottomright", pal = paleta, values = ~Total_Ventas,
+                title = "Total de Ventas", opacity = 1)
+  })
 ```
 
 📈 4: KPIs {data-orientation=rows}
@@ -188,7 +226,7 @@ str(df_campanias)
 
 Row
 -----------------------------------------------------------------------
-```{r setup1, include=FALSE}
+```{r setup2, include=FALSE}
 
 # Total de ingresos generados
 total_ingresos <- sum(df_datos_completos$total, na.rm = TRUE)

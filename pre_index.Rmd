@@ -41,6 +41,7 @@ df_campanias = read.csv("_data/marketing_campañas.csv", sep = ",")
 df_clientes = read.csv("_data/marketing_clientes.csv", sep = ",")
 df_servicios = read.csv("_data/marketing_servicios.csv", sep = ",")
 df_transacciones = read.csv("_data/marketing_transacciones.csv", sep = ",")
+geo_departamentos <- st_read("_data/bo.json")
 # ponemos los nombres de columnas en minusculas
 names(df_clientes) <- tolower(names(df_clientes))
 names(df_servicios) <- tolower(names(df_servicios))
@@ -68,7 +69,7 @@ df_datos_completos <- df_transacciones %>%
   left_join(df_servicios, by = "id_servicio") %>%
   left_join(df_campanias, by = "id_campaña")
 # 💾 GUARDAR DATOS UNIDOS EN UN ARCHIVO .RData
-save(df_datos_completos,df_campanias, df_clientes ,df_transacciones, df_servicios, file = "_data/datos_completos.RData")
+save(df_datos_completos,df_campanias, df_clientes ,df_transacciones, df_servicios, geo_departamentos, file = "_data/datos_completos.RData")
 
 head(df_datos_completos)
 ```

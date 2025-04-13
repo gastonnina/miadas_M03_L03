@@ -19,6 +19,8 @@ if (!require("flexdashboard")) install.packages("flexdashboard")
 if (!require("DT")) install.packages("DT")
 if (!require("leaflet")) install.packages("leaflet")
 if (!require("sf")) install.packages("sf")
+if (!require("googleway")) install.packages("googleway")
+
 library(tidyverse)
 library(dplyr)
 library(flexdashboard)
@@ -180,7 +182,7 @@ hchart(df_datos_completos, "scatter", hcaes(x = edad, y = total)) %>%
 🧭️ 3: Visualización geoespacial con rutas
 =======================================================================
 
-Row
+Row {.tabset}
 -----------------------------------------------------------------------
 ```{r setup1, include=FALSE}
 #  Resumen por departamento
@@ -209,17 +211,68 @@ popup_contenido <- paste0(
 
 ### GeoJSON
 ```{r}
+leaflet(mapa_datos) %>%
+  addProviderTiles(providers$CartoDB.Positron) %>%
+  addPolygons(
+    fillColor = ~paleta(total_ventas),
+    fillOpacity = 0.8,
+    color = "white", weight = 1,
+    popup = popup_contenido
+  ) %>%
+  addLegend("bottomright", pal = paleta, values = ~total_ventas,
+            title = "Total de Ventas", opacity = 1)
+```
+### Rutas Comerciales
+```{r}
+# apliacmos google maps key
+set_key("AIzaSyBZpi6RTWeNiFrc680OGFicJHDTTvZArsM")  # Reemplaza por tu API Key activa
 
-    leaflet(mapa_datos) %>%
-      addProviderTiles(providers$CartoDB.Positron) %>%
-      addPolygons(
-        fillColor = ~paleta(total_ventas),
-        fillOpacity = 0.8,
-        color = "white", weight = 1,
-        popup = popup_contenido
-      ) %>%
-      addLegend("bottomright", pal = paleta, values = ~total_ventas,
-                title = "Total de Ventas", opacity = 1)
+# creamos matriz de rutas
+rutas <- list(
+  c("La Paz, Bolivia", "Oruro, Bolivia"),
+  c("Cochabamba, Bolivia", "Sucre, Bolivia"),
+  c("Santa Cruz, Bolivia", "Trinidad, Bolivia"),
+  c("Tarija, Bolivia", "Potosí, Bolivia")
+)
+
+colores <- c("red", "blue", "green", "purple")
+
+# MAPA BASE CON LEAFLET
+mapa <- leaflet() %>%
+  addTiles()
+
+# AGREGAR CADA RUTA AL MAPA
+for (i in seq_along(rutas)) {
+  origen <- rutas[[i]][1]
+  destino <- rutas[[i]][2]
+  color <- colores[i]
+  
+  ruta <- google_directions(origin = origen, destination = destino, mode = "driving")
+  
+  if (ruta$status == "OK") {
+    encoded <- ruta$routes$overview_polyline$points
+    
+    if (!is.null(encoded) && is.character(encoded) && length(encoded) == 1) {
+      coords <- decode_pl(encoded)
+      
+      mapa <- mapa %>%
+        addPolylines(data = coords, lng = ~lon, lat = ~lat, color = color, weight = 4) %>%
+        addMarkers(lng = coords$lon[1], lat = coords$lat[1], popup = paste("Inicio:", origen)) %>%
+        addMarkers(lng = tail(coords$lon, 1), lat = tail(coords$lat, 1), popup = paste("Destino:", destino))
+    }
+  } else {
+    warning(paste("❌ Error al obtener la ruta entre:", origen, "y", destino))
+  }
+}
+
+# -----------------------------
+# MOSTRAR MAPA
+# -----------------------------
+mapa
+```
+
+### Filtros
+```{r}
 
 ```
 

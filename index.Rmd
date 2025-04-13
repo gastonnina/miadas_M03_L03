@@ -276,20 +276,92 @@ mapa
 ### Filtros
 
 ```{r}
- selectInput("rutaOpcion", label = h3("Listado de rutas"), 
-    choices = list(
-      "La Paz → Oruro → Potosí → Sucre" = 1, 
-      "Santa Cruz → Trinidad → Riberalta → Cobija" = 2, 
-      "3" = 3, 
-      "4" = 4, 
-      "5" = 5), 
-    selected = 1)
-```
-```{r}
+rutas_opciones <- list(
+  "La Paz → Oruro → Potosí → Sucre" = list(
+    origen = "La Paz, Bolivia",
+    destino = "Sucre, Bolivia",
+    waypoints = list("Oruro, Bolivia", "Potosí, Bolivia")
+  ),
+  "Santa Cruz → Trinidad → Riberalta → Cobija" = list(
+    origen = "Santa Cruz, Bolivia",
+    destino = "Cobija, Bolivia",
+    waypoints = list("Trinidad, Bolivia", "Riberalta, Bolivia")
+  ),
+  "Tarija → Tupiza → Villazón → Uyuni" = list(
+    origen = "Tarija, Bolivia",
+    destino = "Uyuni, Bolivia",
+    waypoints = list("Tupiza, Bolivia", "Villazón, Bolivia")
+  ),
+  "Sucre → Aiquile → Cochabamba → Santa Cruz" = list(
+    origen = "Sucre, Bolivia",
+    destino = "Santa Cruz, Bolivia",
+    waypoints = list("Aiquile, Bolivia", "Cochabamba, Bolivia")
+  ),
+  "Cochabamba → Chapare → San Ignacio de Moxos → Trinidad" = list(
+    origen = "Cochabamba, Bolivia",
+    destino = "Trinidad, Bolivia",
+    waypoints = list("Chapare, Bolivia", "San Ignacio de Moxos, Bolivia")
+  ),
+  "La Paz → Copacabana → Desaguadero → Patacamaya" = list(
+    origen = "La Paz, Bolivia",
+    destino = "Patacamaya, Bolivia",
+    waypoints = list("Copacabana, Bolivia", "Desaguadero, Bolivia")
+  )
+)
+ selectInput("ruta_seleccionada", label = h3("Listado de rutas"), 
+    choices = names(rutas_opciones), 
+    selected = names(rutas_opciones)[1])
 
-renderText({
-  paste("Seleccionaste la opción:", input$rutaOpcion)
+observeEvent(input$ruta_seleccionada, {
+  
+  seleccion <- rutas_opciones[[input$ruta_seleccionada]]
+  origen <- seleccion$origen
+  destino <- seleccion$destino
+  waypoints <- seleccion$waypoints
+
+  # Solicitar ruta desde la API
+  ruta <- google_directions(
+    origin = origen,
+    destination = destino,
+    waypoints = waypoints,
+    mode = "driving"
+  )
+
+  encoded <- ruta$routes$overview_polyline$points
+
+  if (!is.null(encoded) && is.character(encoded) && length(encoded) == 1) {
+    coords <- decode_pl(encoded)
+
+    output$mapa_ruta <- renderLeaflet({
+      leaflet(coords) %>%
+        addProviderTiles("CartoDB.Positron") %>%
+        addPolylines(lng = ~lon, lat = ~lat, color = "darkred", weight = 5) %>%
+        addMarkers(lng = coords$lon[1], lat = coords$lat[1],
+                   popup = paste("Inicio:", origen)) %>%
+        addMarkers(lng = tail(coords$lon, 1), lat = tail(coords$lat, 1),
+                   popup = paste("Destino:", destino)) %>%
+        addCircleMarkers(
+          lng = coords$lon[round(nrow(coords) * 0.33)],
+          lat = coords$lat[round(nrow(coords) * 0.33)],
+          popup = paste("Parada:", waypoints[[1]]),
+          color = "green", radius = 6
+        ) %>%
+        addCircleMarkers(
+          lng = coords$lon[round(nrow(coords) * 0.66)],
+          lat = coords$lat[round(nrow(coords) * 0.66)],
+          popup = paste("Parada:", waypoints[[2]]),
+          color = "blue", radius = 6
+        )
+    })
+
+  } else {
+    showNotification("❌ Error: No se pudo generar la ruta. Verifica tu API Key o los nombres de los lugares.",
+                     type = "error")
+  }
+
 })
+
+leafletOutput("mapa_ruta", height = "400px")
 
 ```
 

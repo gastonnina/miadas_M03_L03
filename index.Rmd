@@ -12,6 +12,7 @@ output:
         google: JetBrains Mono
     orientation: columns
     vertical_layout: fill
+runtime: shiny
 ---
 
 ```{r setup, include=FALSE}
@@ -271,8 +272,24 @@ for (i in seq_along(rutas)) {
 mapa
 ```
 
+
 ### Filtros
+
 ```{r}
+ selectInput("rutaOpcion", label = h3("Listado de rutas"), 
+    choices = list(
+      "La Paz → Oruro → Potosí → Sucre" = 1, 
+      "Santa Cruz → Trinidad → Riberalta → Cobija" = 2, 
+      "3" = 3, 
+      "4" = 4, 
+      "5" = 5), 
+    selected = 1)
+```
+```{r}
+
+renderText({
+  paste("Seleccionaste la opción:", input$rutaOpcion)
+})
 
 ```
 

@@ -18,11 +18,13 @@ output:
 if (!require("flexdashboard")) install.packages("flexdashboard")
 if (!require("DT")) install.packages("DT")
 if (!require("leaflet")) install.packages("leaflet")
+if (!require("sf")) install.packages("sf")
 library(tidyverse)
 library(dplyr)
 library(flexdashboard)
 library(DT)
 library(highcharter)
+library(sf) # para maps y datos espaciales
 library(leaflet)
 load("_data/datos_completos.RData")
 ```
@@ -207,18 +209,18 @@ popup_contenido <- paste0(
 
 ### GeoJSON
 ```{r}
-renderLeaflet({
+
     leaflet(mapa_datos) %>%
       addProviderTiles(providers$CartoDB.Positron) %>%
       addPolygons(
-        fillColor = ~paleta(Total_Ventas),
+        fillColor = ~paleta(total_ventas),
         fillOpacity = 0.8,
         color = "white", weight = 1,
         popup = popup_contenido
       ) %>%
-      addLegend("bottomright", pal = paleta, values = ~Total_Ventas,
+      addLegend("bottomright", pal = paleta, values = ~total_ventas,
                 title = "Total de Ventas", opacity = 1)
-  })
+
 ```
 
 📈 4: KPIs {data-orientation=rows}

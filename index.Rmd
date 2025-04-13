@@ -138,6 +138,7 @@ df_datos_completos %>%
 ```{r}
 df_datos_completos %>%
   count(ciudad, name = "total_clientes") %>%
+  arrange(desc(total_clientes)) %>%  # Ordena de mayor a menor
   hchart("bar", hcaes(x = ciudad, y = total_clientes)) %>%
   hc_title(text = "Participación por Ciudad") %>%
   hc_xAxis(title = list(text = "Ciudad")) %>%

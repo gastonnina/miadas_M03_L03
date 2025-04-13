@@ -271,10 +271,12 @@ for (i in seq_along(rutas)) {
 # -----------------------------
 mapa
 ```
+🧭 3.1: Mapa con filtro  {.no-padding}
+=======================================================================
 
-
-### Filtros
-
+Input {.sidebar}
+-----------------------------------------------------------------------
+Selecciona una ruta y el mapa se actualizara
 ```{r}
 rutas_opciones <- list(
   "La Paz → Oruro → Potosí → Sucre" = list(
@@ -311,8 +313,8 @@ rutas_opciones <- list(
  selectInput("ruta_seleccionada", label = h3("Listado de rutas"), 
     choices = names(rutas_opciones), 
     selected = names(rutas_opciones)[1])
-
-observeEvent(input$ruta_seleccionada, {
+ 
+ observeEvent(input$ruta_seleccionada, {
   
   seleccion <- rutas_opciones[[input$ruta_seleccionada]]
   origen <- seleccion$origen
@@ -361,7 +363,13 @@ observeEvent(input$ruta_seleccionada, {
 
 })
 
-leafletOutput("mapa_ruta", height = "400px")
+```
+Row {.no-padding}
+-----------------------------------------------------------------------
+### MAPA INTERACTIVO 
+```{r}
+
+leafletOutput("mapa_ruta", height = "100%")
 
 ```
 
